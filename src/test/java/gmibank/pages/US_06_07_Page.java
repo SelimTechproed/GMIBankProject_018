@@ -13,13 +13,13 @@ public class  US_06_07_Page{
 
     }
 //1
-    @FindBy (xpath = "//*[@class='d-flex align-items-center dropdown-toggle nav-link']")
+    @FindBy (id = "account-menu")
     public WebElement accountMenu;
 //2
     @FindBy (id = "login-item")
     public WebElement signInPrimary;
 //3
-    @FindBy (name = "username")
+    @FindBy (id = "username")
     public WebElement userName;
 //4
     @FindBy (name = "password")

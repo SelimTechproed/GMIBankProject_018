@@ -8,6 +8,7 @@ Feature: User Info Functionality
       And   user provide valid password "Ahmet2020."
       And   user click sign in button
 
+
     @TC_002
     Scenario: US_006 TC_002
       Given user click to account menu
@@ -19,7 +20,7 @@ Feature: User Info Functionality
     Scenario: US_006 TC_003
       Given user click to account menu
       And   user click to user info
-      And   Click in the firstname box and type a new firstname "Ahmet"
+      And   Click in the firstname box and type a new firstname
       And   user click save in button
       Then  Verify that my firstname  have been updated
 
@@ -27,7 +28,7 @@ Feature: User Info Functionality
   Scenario: US_006 TC_004
     Given user click to account menu
     And   user click to user info
-    And   Click in the lastname box and type a new lastname "Aslan"
+    And   Click in the lastname box and type a new lastname
     And   user click save in button
     Then  Verify that my lastname  have been updated
 
@@ -35,7 +36,7 @@ Feature: User Info Functionality
   Scenario: US_006 TC_005
     Given user click to account menu
     And   user click to user info
-    And   Click on the mailbox and type in a new email address "aslanbey@gmail.com"
+    And   Click on the mailbox and type in a new email address
     And   user click save in button
     Then  Verify update by adding "@" sign and ".com" extension to your email
 
