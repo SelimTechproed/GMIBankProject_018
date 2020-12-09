@@ -1,6 +1,7 @@
 package gmibank.stepdefinitions;
 
 import gmibank.utilities.Driver;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
@@ -14,12 +15,12 @@ public class Hooks {
 
     }
 
-    @Before(value = "iphone",order = 2)
+    @Before(value = "iphone", order = 2)
     public void searchIphone(){
 
     }
 
-
+     @After
     public void tearDown(Scenario scenario){
 
         final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
