@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class US_06_07_Page {
+public class  US_06_07_Page{
 
     public US_06_07_Page(){
 
