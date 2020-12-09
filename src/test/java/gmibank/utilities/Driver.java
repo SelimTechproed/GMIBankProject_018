@@ -363,5 +363,14 @@ public class Driver {
 
 
  */
+     public static void verifyElementClickablle(By by) {
+         try {
+             assertTrue("Element is clickable : " + by, Driver.getDriver().findElement(by).isEnabled());
+         } catch (NoSuchElementException e) {
+             e.printStackTrace();
+         }
+
+     }
+
 
   }
