@@ -33,7 +33,6 @@ public class US_09_Stepdefinitions {
     @Given("US09 click to my operations")
     public void us09_click_to_my_operations() {
         us_09_page.myOperations.click();
-
     }
 
     @Given("US09 click to manage customers")
