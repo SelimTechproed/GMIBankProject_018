@@ -1,11 +1,11 @@
 @us_11
 Feature: us_11 tests
   Background: user enters gmibank homepage
-    Given user goes to "https://gmibank.com"
+    Given user goes to "https://gmibank.com/login"
     And user clicks userEntry icon
     And user clicks signIn link
-    And user enters admin username "joseph37"
-    And user enters admin password "1234567"
+    And user enters admin username "team18_admin"
+    And user enters admin password "Team18admin"
     And user clicks signIn button
     And user clicks myOperations link
     And user clicks manageCostomers link

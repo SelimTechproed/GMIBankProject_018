@@ -11,103 +11,147 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "duration": 51000000,
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:22.481Z",
+        "start_timestamp": "2020-12-09T00:26:30.333Z",
         "before": [
           {
             "result": {
               "duration": 8000000,
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -123,29 +167,43 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 16,
             "name": "user send data to date box \"12.12.2015 12:00 \"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12.12.2015 12:00 \"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_send_data_to_date_box(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 17,
             "name": "user verifies valid data entry to Create Date box",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_valid_data_entry_to_Create_Date_box()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 18,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -167,102 +225,147 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "duration": 2000000,
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 23000000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:23.511Z",
+        "start_timestamp": "2020-12-09T00:26:31.341Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -278,29 +381,43 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 16,
             "name": "user send data to date box \"01.20.2020 11:15 \"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01.20.2020 11:15 \"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_send_data_to_date_box(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 17,
             "name": "user verifies valid data entry to Create Date box",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_valid_data_entry_to_Create_Date_box()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 18,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -322,102 +439,146 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "duration": 2000000,
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:23.735Z",
+        "start_timestamp": "2020-12-09T00:26:31.493Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -433,29 +594,42 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 25,
             "name": "user send invalid data format to date box \"01.12.2020\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01.12.2020\"",
+                  "offset": 42
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_send_invalid_data_format_to_date_box(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 26,
             "name": "user verifies invalid data entry to Create Date box",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_invalid_data_entry_to_Create_Date_box()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 27,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -477,102 +651,145 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 39000000,
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 20000000,
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:23.921Z",
+        "start_timestamp": "2020-12-09T00:26:31.603Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -588,29 +805,43 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 11000000,
+              "status": "skipped"
             },
             "line": 25,
             "name": "user send invalid data format to date box \"01.20.2021 11\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01.20.2021 11\"",
+                  "offset": 42
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_send_invalid_data_format_to_date_box(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 26,
             "name": "user verifies invalid data entry to Create Date box",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_invalid_data_entry_to_Create_Date_box()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 27,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -632,102 +863,147 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 43000000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3000000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:24.081Z",
+        "start_timestamp": "2020-12-09T00:26:31.818Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -743,29 +1019,42 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 25,
             "name": "user send invalid data format to date box \"11.2021 09:30\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11.2021 09:30\"",
+                  "offset": 42
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_send_invalid_data_format_to_date_box(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 26,
             "name": "user verifies invalid data entry to Create Date box",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_invalid_data_entry_to_Create_Date_box()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 27,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -787,102 +1076,142 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:24.217Z",
+        "start_timestamp": "2020-12-09T00:26:32.021Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -898,29 +1227,42 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 35,
             "name": "user send valid data format to date box \"12.30.2020 12:00\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12.30.2020 12:00\"",
+                  "offset": 40
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_send_valid_data_format_to_date_box(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 36,
             "name": "user verifies valid date format to Create Date box",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_valid_date_format_to_Create_Date_box()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 37,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -942,102 +1284,145 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "duration": 2000000,
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:24.369Z",
+        "start_timestamp": "2020-12-09T00:26:32.193Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -1053,29 +1438,42 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 35,
             "name": "user send valid data format to date box \"01.21.2021 11:15\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01.21.2021 11:15\"",
+                  "offset": 40
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_send_valid_data_format_to_date_box(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 36,
             "name": "user verifies valid date format to Create Date box",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_valid_date_format_to_Create_Date_box()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 37,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -1097,102 +1495,143 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "duration": 8000000,
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:24.481Z",
+        "start_timestamp": "2020-12-09T00:26:32.325Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -1208,29 +1647,36 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 11000000,
+              "status": "skipped"
             },
             "line": 44,
             "name": "user select a user from dropbox",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_select_a_user_from_dropbox()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 45,
             "name": "user verifies a user can be selected",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_a_user_can_be_selected()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 46,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -1252,102 +1698,145 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "duration": 10000000,
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 41000000,
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:24.569Z",
+        "start_timestamp": "2020-12-09T00:26:32.508Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -1363,29 +1852,37 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 10000000,
+              "status": "skipped"
             },
             "line": 49,
             "name": "user select an account from dropbox",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_select_an_account_from_dropbox()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 50,
             "name": "user verifies an account can be selected",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_an_account_can_be_selected()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 51,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
@@ -1407,102 +1904,145 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_11_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_11_Page.\u003cinit\u003e(US_11_Page.java:11)\r\n\tat gmibank.stepdefinitions.US_11_StepDefinitions.\u003cinit\u003e(US_11_StepDefinitions.java:11)\r\n\t... 38 more\r\n",
+              "status": "failed"
             },
             "line": 4,
-            "name": "user goes to \"https://gmibank.com\"",
-            "match": {},
+            "name": "user goes to \"https://gmibank.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_goes_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks userEntry icon",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_userEntry_icon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 6,
             "name": "user clicks signIn link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters admin username \"joseph37\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joseph37\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters admin password \"1234567\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_enters_admin_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user clicks signIn button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_signIn_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 10,
             "name": "user clicks myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8000000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks manageCostomers link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_manageCostomers_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks createNewCustomer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_createNewCustomer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 13,
             "name": "reaches sign in link and clicks user info",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.reaches_sign_in_link_and_clicks_user_info()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T17:01:24.681Z",
+        "start_timestamp": "2020-12-09T00:26:32.641Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
@@ -1518,38 +2058,47 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 11000000,
+              "status": "skipped"
             },
             "line": 54,
             "name": "user select Zelle Enrolled checkbox",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_select_Zelle_Enrolled_checkbox()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 55,
             "name": "user clicks on save button",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_clicks_on_save_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 56,
             "name": "user verifies is selected",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_verifies_is_selected()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 57,
             "name": "user signOut",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US_11_StepDefinitions.user_signOut()"
+            },
             "keyword": "Then "
           }
         ],
