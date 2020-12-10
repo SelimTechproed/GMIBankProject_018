@@ -1,164 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="10" tests="10" time="0.314">
-<testcase classname="us_11 tests" name="Create Date negative test (for in the past)" time="0.061">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user send data to date box "12.12.2015 12:00 "........................undefined
-Then user verifies valid data entry to Create Date box......................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="236.157">
+<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address" time="27.676">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user send "abcdefghgmail.com" into the email box........................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
 </testcase>
-<testcase classname="us_11 tests" name="Create Date negative test (for in the past) 2" time="0.007">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user send data to date box "01.20.2020 11:15 "........................undefined
-Then user verifies valid data entry to Create Date box......................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 2" time="27.498">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user send "abc..def@gmail.com" into the email box.......................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
 </testcase>
-<testcase classname="us_11 tests" name="TC_1102 Date format negative test" time="0.011">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user send invalid data format to date box "01.12.2020"................undefined
-Then user verifies invalid data entry to Create Date box....................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 3" time="26.479">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user send ".abc@gmail.com" into the email box...........................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
 </testcase>
-<testcase classname="us_11 tests" name="TC_1102 Date format negative test 2" time="0.008">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user send invalid data format to date box "01.20.2021 11".............undefined
-Then user verifies invalid data entry to Create Date box....................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 4" time="26.656">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user send "@gmail.com" into the email box...............................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
 </testcase>
-<testcase classname="us_11 tests" name="TC_1102 Date format negative test 3" time="0.007">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user send invalid data format to date box "11.2021 09:30".............undefined
-Then user verifies invalid data entry to Create Date box....................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 5" time="26.812">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user send "abcdef@gmail." into the email box............................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
 </testcase>
-<testcase classname="us_11 tests" name="TC_1103 Date format positive test" time="0.011">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user send valid data format to date box "12.30.2020 12:00"............undefined
-And user verifies valid date format to Create Date box......................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 6" time="26.477">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user send "abc@gmail#arcihe.com" into the email box.....................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
 </testcase>
-<testcase classname="us_11 tests" name="TC_1103 Date format positive test 2" time="0.013">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user send valid data format to date box "01.21.2021 11:15"............undefined
-And user verifies valid date format to Create Date box......................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 7" time="26.787">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user send "abcdef@gmail" into the email box.............................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
 </testcase>
-<testcase classname="us_11 tests" name="User positive test" time="0.008">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user select a user from dropbox.......................................undefined
-And user verifies a user can be selected....................................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 8" time="27.392">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user send "abc@gmail..com" into the email box...........................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
 </testcase>
-<testcase classname="us_11 tests" name="Account positive test" time="0.008">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user select an account from dropbox...................................undefined
-And user verifies an account can be selected................................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
-</testcase>
-<testcase classname="us_11 tests" name="Zelle Enrolled option checkbox positive test" time="0.009">
-<skipped><![CDATA[Given user goes to "https://gmibank.com"....................................undefined
-And user clicks userEntry icon..............................................undefined
-And user clicks signIn link.................................................undefined
-And user enters admin username "joseph37"...................................undefined
-And user enters admin password "1234567"....................................undefined
-And user clicks signIn button...............................................undefined
-And user clicks myOperations link...........................................undefined
-And user clicks manageCostomers link........................................undefined
-And user clicks createNewCustomer link......................................undefined
-Then reaches sign in link and clicks user info..............................undefined
-Given user select Zelle Enrolled checkbox...................................undefined
-And user clicks on save button..............................................undefined
-And user verifies is selected...............................................undefined
-Then user signOut...........................................................undefined
-]]></skipped>
+<testcase classname="User Info Functionality" name="TC_02_There should not be an option of any other language other than English or Turkish" time="20.011">
+<system-out><![CDATA[Given user goes to login page...............................................passed
+And user provide valid username "ahmetbeyusername"..........................passed
+And user provide valid password "Ahmet2020."................................passed
+And user click sign in button...............................................passed
+Given user click to account menu............................................passed
+And user click to user info.................................................passed
+And user give an option language dropdown...................................passed
+Then user assert that there is no option other than English and Turkish.....passed
+]]></system-out>
 </testcase>
 </testsuite>
