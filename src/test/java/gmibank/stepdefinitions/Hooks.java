@@ -18,10 +18,10 @@ public class Hooks {
 
     //TAGGED Hooks Annotation
     //Her ozel scenario dan once calisir
-    @Before(value = "iphone",order = 2)
-    public void searchIphone(){
+ //   @Before(value = "iphone",order = 2)
+ //   public void searchIphone(){
         //System.out.println("Hooks Class - IPHONE method");
-    }
+  //  }
 
     //Her scenario dan sonra
 //    @After
