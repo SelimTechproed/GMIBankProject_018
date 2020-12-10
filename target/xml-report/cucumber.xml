@@ -1,110 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="236.157">
-<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address" time="27.676">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user send "abcdefghgmail.com" into the email box........................passed
-And user click save button..................................................passed
-Then user assert that user account can not update with invalid email address.passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 2" time="27.498">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user send "abc..def@gmail.com" into the email box.......................passed
-And user click save button..................................................passed
-Then user assert that user account can not update with invalid email address.passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 3" time="26.479">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user send ".abc@gmail.com" into the email box...........................passed
-And user click save button..................................................passed
-Then user assert that user account can not update with invalid email address.passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 4" time="26.656">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user send "@gmail.com" into the email box...............................passed
-And user click save button..................................................passed
-Then user assert that user account can not update with invalid email address.passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 5" time="26.812">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user send "abcdef@gmail." into the email box............................passed
-And user click save button..................................................passed
-Then user assert that user account can not update with invalid email address.passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 6" time="26.477">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user send "abc@gmail#arcihe.com" into the email box.....................passed
-And user click save button..................................................passed
-Then user assert that user account can not update with invalid email address.passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 7" time="26.787">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user send "abcdef@gmail" into the email box.............................passed
-And user click save button..................................................passed
-Then user assert that user account can not update with invalid email address.passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Functionality" name="TC_01_user can not update with invalid email address 8" time="27.392">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user send "abc@gmail..com" into the email box...........................passed
-And user click save button..................................................passed
-Then user assert that user account can not update with invalid email address.passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Functionality" name="TC_02_There should not be an option of any other language other than English or Turkish" time="20.011">
-<system-out><![CDATA[Given user goes to login page...............................................passed
-And user provide valid username "ahmetbeyusername"..........................passed
-And user provide valid password "Ahmet2020."................................passed
-And user click sign in button...............................................passed
-Given user click to account menu............................................passed
-And user click to user info.................................................passed
-And user give an option language dropdown...................................passed
-Then user assert that there is no option other than English and Turkish.....passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.328">
+<testcase classname="Login page" name="TC_01 User should be able to login with valid credentials" time="0.054">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user go to "https://gmibank.com/".....................................undefined
+And user click on account menu button.......................................undefined
+And user click on sign in button............................................undefined
+And user send valid user_username to usernamebox............................undefined
+And user send valid user_password  to passwordbox...........................undefined
+And user click on "Sign in" button..........................................undefined
+Then verify if the user sign in.............................................undefined
+]]></failure>
 </testcase>
 </testsuite>
