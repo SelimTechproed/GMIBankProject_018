@@ -3,26 +3,90 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-10T13:56:33.972Z",
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3377000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1051000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:29:46.401Z",
         "before": [
           {
             "result": {
               "duration": 1000000,
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 5,
-        "name": "TC_01 User should be able to login with valid credentials",
+        "line": 11,
+        "name": "US_008 TC_001 Old password can not be used again",
         "description": "",
-        "id": "login-page;tc-01-user-should-be-able-to-login-with-valid-credentials",
+        "id": "user-info-functionality-on-password;us-008-tc-001-old-password-can-not-be-used-again",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 723000000,
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -34,80 +98,939 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 51000000,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "user go to \"https://gmibank.com/\"",
-            "match": {},
+            "line": 12,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 48000000,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "user click on account menu button",
-            "match": {},
+            "line": 13,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5478000000,
+              "status": "passed"
             },
-            "line": 8,
-            "name": "user click on sign in button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "line": 14,
+            "name": "verifies there is old password passord bug",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_there_is_old_password_bug()"
             },
-            "line": 9,
-            "name": "user send valid user_username to usernamebox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "user send valid user_password  to passwordbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "user click on \"Sign in\" button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "verify if the user sign in",
-            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@TC01Erol"
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_001"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2150000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:29:57.334Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "US_008 TC_002 new password should have at least 1 \"lowercase\" to change line1 color of chart color",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-00\u003cnumbers\u003e-new-password-should-have-at-least-1-\"\u003ccharacter\u003e\"-to-change-line1-color-of-chart-color;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 756000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter new seven chars \"111111a\" and verifies that  should be at least one \"lowercase\" at new password and level chart changes accordingly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111111a\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"lowercase\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_00-2-3-4-5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2854000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:01.769Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "US_008 TC_003 new password should have at least 1 \"uppercase\" to change line1 color of chart color",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-00\u003cnumbers\u003e-new-password-should-have-at-least-1-\"\u003ccharacter\u003e\"-to-change-line1-color-of-chart-color;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 755000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 236000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter new seven chars \"111111A\" and verifies that  should be at least one \"uppercase\" at new password and level chart changes accordingly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111111A\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"uppercase\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_00-2-3-4-5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2100000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:06.902Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "US_008 TC_004 new password should have at least 1 \"special\" to change line1 color of chart color",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-00\u003cnumbers\u003e-new-password-should-have-at-least-1-\"\u003ccharacter\u003e\"-to-change-line1-color-of-chart-color;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 712000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter new seven chars \"111111_\" and verifies that  should be at least one \"special\" at new password and level chart changes accordingly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111111_\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"special\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_00-2-3-4-5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2949000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1047000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:11.263Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "US_008 TC_005 new password should have at least 1 \"digit\" to change line1 color of chart color",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-00\u003cnumbers\u003e-new-password-should-have-at-least-1-\"\u003ccharacter\u003e\"-to-change-line1-color-of-chart-color;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 738000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter new seven chars \"aaaaaa1\" and verifies that  should be at least one \"digit\" at new password and level chart changes accordingly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aaaaaa1\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"digit\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_00-2-3-4-5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2813000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1045000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:16.478Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "US_008 TC_006 New password should have at least 4 chars",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-006-new-password-should-have-at-least-4-chars",
+        "after": [
+          {
+            "result": {
+              "duration": 735000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15830000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "verifies there is one bug that new password accepts at least four char",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_there_is_one_bug_that_new_password_accepts_at_least_four_char()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_006"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2903000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1049000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:37.175Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "US_008 TC_007 New password should be confirmed",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-007-new-password-should-be-confirmed",
+        "after": [
+          {
+            "result": {
+              "duration": 729000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5473000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "verifies that new valid password must be confirmed",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_that_new_valid_password_must_be_confirmed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_007"
           }
         ]
       }
     ],
-    "name": "Login page",
+    "name": "User Info Functionality On Password",
     "description": "",
-    "id": "login-page",
+    "id": "user-info-functionality-on-password",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_04.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/US_08.feature",
+    "tags": [
+      {
+        "name": "@US_008",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

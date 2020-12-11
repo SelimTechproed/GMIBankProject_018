@@ -1,13 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.328">
-<testcase classname="Login page" name="TC_01 User should be able to login with valid credentials" time="0.054">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user go to "https://gmibank.com/".....................................undefined
-And user click on account menu button.......................................undefined
-And user click on sign in button............................................undefined
-And user send valid user_username to usernamebox............................undefined
-And user send valid user_password  to passwordbox...........................undefined
-And user click on "Sign in" button..........................................undefined
-Then verify if the user sign in.............................................undefined
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="61.311">
+<testcase classname="User Info Functionality On Password" name="US_008 TC_001 Old password can not be used again" time="10.922">
+<system-out><![CDATA[Given user goes to "http://www.gmibank.com/login" loginpage.................passed
+And user provides valid username............................................passed
+And user provides valid password............................................passed
+And user clicks sign in button..............................................passed
+Given user clicks to account menu...........................................passed
+And user clicks to password button to edit..................................passed
+Then verifies there is old password passord bug.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Functionality On Password" name="US_008 TC_002 new password should have at least 1 &quot;lowercase&quot; to change line1 color of chart color" time="4.428">
+<system-out><![CDATA[Given user goes to "http://www.gmibank.com/login" loginpage.................passed
+And user provides valid username............................................passed
+And user provides valid password............................................passed
+And user clicks sign in button..............................................passed
+Given user clicks to account menu...........................................passed
+And user clicks to password button to edit..................................passed
+Then enter new seven chars "111111a" and verifies that  should be at least one "lowercase" at new password and level chart changes accordingly.passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Functionality On Password" name="US_008 TC_003 new password should have at least 1 &quot;uppercase&quot; to change line1 color of chart color" time="5.128">
+<system-out><![CDATA[Given user goes to "http://www.gmibank.com/login" loginpage.................passed
+And user provides valid username............................................passed
+And user provides valid password............................................passed
+And user clicks sign in button..............................................passed
+Given user clicks to account menu...........................................passed
+And user clicks to password button to edit..................................passed
+Then enter new seven chars "111111A" and verifies that  should be at least one "uppercase" at new password and level chart changes accordingly.passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Functionality On Password" name="US_008 TC_004 new password should have at least 1 &quot;special&quot; to change line1 color of chart color" time="4.357">
+<system-out><![CDATA[Given user goes to "http://www.gmibank.com/login" loginpage.................passed
+And user provides valid username............................................passed
+And user provides valid password............................................passed
+And user clicks sign in button..............................................passed
+Given user clicks to account menu...........................................passed
+And user clicks to password button to edit..................................passed
+Then enter new seven chars "111111_" and verifies that  should be at least one "special" at new password and level chart changes accordingly.passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Functionality On Password" name="US_008 TC_005 new password should have at least 1 &quot;digit&quot; to change line1 color of chart color" time="5.212">
+<system-out><![CDATA[Given user goes to "http://www.gmibank.com/login" loginpage.................passed
+And user provides valid username............................................passed
+And user provides valid password............................................passed
+And user clicks sign in button..............................................passed
+Given user clicks to account menu...........................................passed
+And user clicks to password button to edit..................................passed
+Then enter new seven chars "aaaaaa1" and verifies that  should be at least one "digit" at new password and level chart changes accordingly.passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Functionality On Password" name="US_008 TC_006 New password should have at least 4 chars" time="20.693">
+<system-out><![CDATA[Given user goes to "http://www.gmibank.com/login" loginpage.................passed
+And user provides valid username............................................passed
+And user provides valid password............................................passed
+And user clicks sign in button..............................................passed
+Given user clicks to account menu...........................................passed
+And user clicks to password button to edit..................................passed
+Then verifies there is one bug that new password accepts at least four char.passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Functionality On Password" name="US_008 TC_007 New password should be confirmed" time="10.401">
+<system-out><![CDATA[Given user goes to "http://www.gmibank.com/login" loginpage.................passed
+And user provides valid username............................................passed
+And user provides valid password............................................passed
+And user clicks sign in button..............................................passed
+Given user clicks to account menu...........................................passed
+And user clicks to password button to edit..................................passed
+Then verifies that new valid password must be confirmed.....................passed
+]]></system-out>
 </testcase>
 </testsuite>
