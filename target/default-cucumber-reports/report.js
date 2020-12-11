@@ -1,42 +1,128 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_07.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_08.feature");
 formatter.feature({
-  "name": "User Info Functionality",
+  "name": "User Info Functionality On Password",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@infoUpdate"
+      "name": "@US_008"
     }
   ]
 });
+formatter.background({
+  "name": "User signs in",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user provides valid username",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user provides valid password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks sign in button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "US_008 TC_001 Old password can not be used again",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@US_008"
+    },
+    {
+      "name": "@US_008-TC_001"
+    }
+  ]
+});
+formatter.step({
+  "name": "user clicks to account menu",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks to password button to edit",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verifies there is old password passord bug",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_there_is_old_password_bug()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 formatter.scenarioOutline({
-  "name": "TC_01_user can not update with invalid email address",
+  "name": "US_008 TC_00\u003cnumbers\u003e new password should have at least 1 \"\u003ccharacter\u003e\" to change line1 color of chart color",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@emailInvalid"
+      "name": "@US_008-TC_00-2-3-4-5"
     }
   ]
 });
 formatter.step({
-  "name": "user click to account menu",
+  "name": "user clicks to account menu",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "user click to user info",
+  "name": "user clicks to password button to edit",
   "keyword": "And "
 });
 formatter.step({
-  "name": "user send \"\u003cuserInfoUpdateEmailBox\u003e\" into the email box",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
+  "name": "enter new seven chars \"\u003cpassword\u003e\" and verifies that  should be at least one \"\u003ccharacter\u003e\" at new password and level chart changes accordingly",
   "keyword": "Then "
 });
 formatter.examples({
@@ -46,53 +132,43 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "userInfoUpdateEmailBox"
+        "numbers",
+        "character",
+        "password"
       ]
     },
     {
       "cells": [
-        "abcdefghgmail.com"
+        "2",
+        "lowercase",
+        "111111a"
       ]
     },
     {
       "cells": [
-        "abc..def@gmail.com"
+        "3",
+        "uppercase",
+        "111111A"
       ]
     },
     {
       "cells": [
-        ".abc@gmail.com"
+        "4",
+        "special",
+        "111111_"
       ]
     },
     {
       "cells": [
-        "@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "abcdef@gmail."
-      ]
-    },
-    {
-      "cells": [
-        "abc@gmail#arcihe.com"
-      ]
-    },
-    {
-      "cells": [
-        "abcdef@gmail"
-      ]
-    },
-    {
-      "cells": [
-        "abc@gmail..com"
+        "5",
+        "digit",
+        "aaaaaa1"
       ]
     }
   ]
 });
 formatter.background({
-  "name": "User goes to login page",
+  "name": "User signs in",
   "description": "",
   "keyword": "Background"
 });
@@ -100,104 +176,84 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user goes to login page",
+  "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
+  "name": "user provides valid username",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
+  "name": "user provides valid password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click sign in button",
+  "name": "user clicks sign in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC_01_user can not update with invalid email address",
+  "name": "US_008 TC_002 new password should have at least 1 \"lowercase\" to change line1 color of chart color",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@infoUpdate"
+      "name": "@US_008"
     },
     {
-      "name": "@emailInvalid"
+      "name": "@US_008-TC_00-2-3-4-5"
     }
   ]
 });
 formatter.step({
-  "name": "user click to account menu",
+  "name": "user clicks to account menu",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click to user info",
+  "name": "user clicks to password button to edit",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user send \"abcdefghgmail.com\" into the email box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
+  "name": "enter new seven chars \"111111a\" and verifies that  should be at least one \"lowercase\" at new password and level chart changes accordingly",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -206,7 +262,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.background({
-  "name": "User goes to login page",
+  "name": "User signs in",
   "description": "",
   "keyword": "Background"
 });
@@ -214,104 +270,84 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user goes to login page",
+  "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
+  "name": "user provides valid username",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
+  "name": "user provides valid password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click sign in button",
+  "name": "user clicks sign in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC_01_user can not update with invalid email address",
+  "name": "US_008 TC_003 new password should have at least 1 \"uppercase\" to change line1 color of chart color",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@infoUpdate"
+      "name": "@US_008"
     },
     {
-      "name": "@emailInvalid"
+      "name": "@US_008-TC_00-2-3-4-5"
     }
   ]
 });
 formatter.step({
-  "name": "user click to account menu",
+  "name": "user clicks to account menu",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click to user info",
+  "name": "user clicks to password button to edit",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user send \"abc..def@gmail.com\" into the email box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
+  "name": "enter new seven chars \"111111A\" and verifies that  should be at least one \"uppercase\" at new password and level chart changes accordingly",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -320,7 +356,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.background({
-  "name": "User goes to login page",
+  "name": "User signs in",
   "description": "",
   "keyword": "Background"
 });
@@ -328,104 +364,84 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user goes to login page",
+  "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
+  "name": "user provides valid username",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
+  "name": "user provides valid password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click sign in button",
+  "name": "user clicks sign in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC_01_user can not update with invalid email address",
+  "name": "US_008 TC_004 new password should have at least 1 \"special\" to change line1 color of chart color",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@infoUpdate"
+      "name": "@US_008"
     },
     {
-      "name": "@emailInvalid"
+      "name": "@US_008-TC_00-2-3-4-5"
     }
   ]
 });
 formatter.step({
-  "name": "user click to account menu",
+  "name": "user clicks to account menu",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click to user info",
+  "name": "user clicks to password button to edit",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user send \".abc@gmail.com\" into the email box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
+  "name": "enter new seven chars \"111111_\" and verifies that  should be at least one \"special\" at new password and level chart changes accordingly",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -434,7 +450,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.background({
-  "name": "User goes to login page",
+  "name": "User signs in",
   "description": "",
   "keyword": "Background"
 });
@@ -442,104 +458,84 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user goes to login page",
+  "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
+  "name": "user provides valid username",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
+  "name": "user provides valid password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click sign in button",
+  "name": "user clicks sign in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC_01_user can not update with invalid email address",
+  "name": "US_008 TC_005 new password should have at least 1 \"digit\" to change line1 color of chart color",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@infoUpdate"
+      "name": "@US_008"
     },
     {
-      "name": "@emailInvalid"
+      "name": "@US_008-TC_00-2-3-4-5"
     }
   ]
 });
 formatter.step({
-  "name": "user click to account menu",
+  "name": "user clicks to account menu",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click to user info",
+  "name": "user clicks to password button to edit",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user send \"@gmail.com\" into the email box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
+  "name": "enter new seven chars \"aaaaaa1\" and verifies that  should be at least one \"digit\" at new password and level chart changes accordingly",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -548,7 +544,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.background({
-  "name": "User goes to login page",
+  "name": "User signs in",
   "description": "",
   "keyword": "Background"
 });
@@ -556,550 +552,178 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user goes to login page",
+  "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
+  "name": "user provides valid username",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
+  "name": "user provides valid password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click sign in button",
+  "name": "user clicks sign in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC_01_user can not update with invalid email address",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@infoUpdate"
-    },
-    {
-      "name": "@emailInvalid"
-    }
-  ]
-});
-formatter.step({
-  "name": "user click to account menu",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click to user info",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user send \"abcdef@gmail.\" into the email box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User goes to login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user goes to login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_01_user can not update with invalid email address",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@infoUpdate"
-    },
-    {
-      "name": "@emailInvalid"
-    }
-  ]
-});
-formatter.step({
-  "name": "user click to account menu",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click to user info",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user send \"abc@gmail#arcihe.com\" into the email box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User goes to login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user goes to login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_01_user can not update with invalid email address",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@infoUpdate"
-    },
-    {
-      "name": "@emailInvalid"
-    }
-  ]
-});
-formatter.step({
-  "name": "user click to account menu",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click to user info",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user send \"abcdef@gmail\" into the email box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User goes to login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user goes to login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_01_user can not update with invalid email address",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@infoUpdate"
-    },
-    {
-      "name": "@emailInvalid"
-    }
-  ]
-});
-formatter.step({
-  "name": "user click to account menu",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click to user info",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user send \"abc@gmail..com\" into the email box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click save button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that user account can not update with invalid email address",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User goes to login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user goes to login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user provide valid username \"ahmetbeyusername\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user provide valid password \"Ahmet2020.\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC_02_There should not be an option of any other language other than English or Turkish",
+  "name": "US_008 TC_006 New password should have at least 4 chars",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@infoUpdate"
+      "name": "@US_008"
     },
     {
-      "name": "@languageOption"
+      "name": "@US_008-TC_006"
     }
   ]
 });
 formatter.step({
-  "name": "user click to account menu",
+  "name": "user clicks to account menu",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click to user info",
+  "name": "user clicks to password button to edit",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user give an option language dropdown",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_give_an_option_language_dropdown()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user assert that there is no option other than English and Turkish",
+  "name": "verifies there is one bug that new password accepts at least four char",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_there_is_no_option_other_than_English_and_Turkish()"
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_there_is_one_bug_that_new_password_accepts_at_least_four_char()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "User signs in",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user provides valid username",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user provides valid password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks sign in button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "US_008 TC_007 New password should be confirmed",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@US_008"
+    },
+    {
+      "name": "@US_008-TC_007"
+    }
+  ]
+});
+formatter.step({
+  "name": "user clicks to account menu",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks to password button to edit",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verifies that new valid password must be confirmed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_that_new_valid_password_must_be_confirmed()"
 });
 formatter.result({
   "status": "passed"
