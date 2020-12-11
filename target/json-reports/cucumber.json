@@ -1,78 +1,72 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "User goes to login page",
+        "line": 4,
+        "name": "User signs in",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 10402000000,
+              "duration": 3377000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user goes to login page",
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2100000000,
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
+            "name": "user provides valid password",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2103000000,
+              "duration": 1051000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
+            "name": "user clicks sign in button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2136000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-09T19:03:06.635Z",
+        "start_timestamp": "2020-12-11T08:29:46.401Z",
         "before": [
           {
             "result": {
@@ -84,1416 +78,14 @@
             }
           }
         ],
-        "line": 22,
-        "name": "TC_01_user can not update with invalid email address",
+        "line": 11,
+        "name": "US_008 TC_001 Old password can not be used again",
         "description": "",
-        "id": "user-info-functionality;tc-01-user-can-not-update-with-invalid-email-address;;2",
+        "id": "user-info-functionality-on-password;us-008-tc-001-old-password-can-not-be-used-again",
         "after": [
           {
             "result": {
-              "duration": 971000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2117000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 115000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click to user info",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4357000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user send \"abcdefghgmail.com\" into the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abcdefghgmail.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3173000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 122000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user assert that user account can not update with invalid email address",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@infoUpdate"
-          },
-          {
-            "name": "@emailInvalid"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User goes to login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 10233000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user goes to login page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2102000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2161000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2137000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-09T19:03:34.336Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "TC_01_user can not update with invalid email address",
-        "description": "",
-        "id": "user-info-functionality;tc-01-user-can-not-update-with-invalid-email-address;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 995000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2119000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 121000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click to user info",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4376000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user send \"abc..def@gmail.com\" into the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abc..def@gmail.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3179000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 69000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user assert that user account can not update with invalid email address",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@infoUpdate"
-          },
-          {
-            "name": "@emailInvalid"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User goes to login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9278000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user goes to login page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2099000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2142000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2142000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-09T19:04:01.849Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "TC_01_user can not update with invalid email address",
-        "description": "",
-        "id": "user-info-functionality;tc-01-user-can-not-update-with-invalid-email-address;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 922000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2197000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 123000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click to user info",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4336000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user send \".abc@gmail.com\" into the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\".abc@gmail.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3148000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 88000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user assert that user account can not update with invalid email address",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@infoUpdate"
-          },
-          {
-            "name": "@emailInvalid"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User goes to login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9132000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user goes to login page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2144000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2176000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2130000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-09T19:04:28.334Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 25,
-        "name": "TC_01_user can not update with invalid email address",
-        "description": "",
-        "id": "user-info-functionality;tc-01-user-can-not-update-with-invalid-email-address;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 957000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2110000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 471000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click to user info",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4292000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user send \"@gmail.com\" into the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"@gmail.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3160000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 80000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user assert that user account can not update with invalid email address",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@infoUpdate"
-          },
-          {
-            "name": "@emailInvalid"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User goes to login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9228000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user goes to login page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2099000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2144000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2205000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-09T19:04:54.994Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "TC_01_user can not update with invalid email address",
-        "description": "",
-        "id": "user-info-functionality;tc-01-user-can-not-update-with-invalid-email-address;;6",
-        "after": [
-          {
-            "result": {
-              "duration": 963000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2220000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 236000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click to user info",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4400000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user send \"abcdef@gmail.\" into the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abcdef@gmail.\"",
-                  "offset": 10
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3263000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user assert that user account can not update with invalid email address",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@infoUpdate"
-          },
-          {
-            "name": "@emailInvalid"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User goes to login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9096000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user goes to login page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2098000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2175000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2157000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-09T19:05:21.811Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "TC_01_user can not update with invalid email address",
-        "description": "",
-        "id": "user-info-functionality;tc-01-user-can-not-update-with-invalid-email-address;;7",
-        "after": [
-          {
-            "result": {
-              "duration": 982000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2161000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 133000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click to user info",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4394000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user send \"abc@gmail#arcihe.com\" into the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abc@gmail#arcihe.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3186000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 92000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user assert that user account can not update with invalid email address",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@infoUpdate"
-          },
-          {
-            "name": "@emailInvalid"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User goes to login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9190000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user goes to login page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2148000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2252000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2111000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-09T19:05:48.295Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "TC_01_user can not update with invalid email address",
-        "description": "",
-        "id": "user-info-functionality;tc-01-user-can-not-update-with-invalid-email-address;;8",
-        "after": [
-          {
-            "result": {
-              "duration": 961000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2210000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 225000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click to user info",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4444000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user send \"abcdef@gmail\" into the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abcdef@gmail\"",
-                  "offset": 10
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3178000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 64000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user assert that user account can not update with invalid email address",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@infoUpdate"
-          },
-          {
-            "name": "@emailInvalid"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User goes to login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9944000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user goes to login page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2161000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2108000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2139000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-09T19:06:15.090Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "TC_01_user can not update with invalid email address",
-        "description": "",
-        "id": "user-info-functionality;tc-01-user-can-not-update-with-invalid-email-address;;9",
-        "after": [
-          {
-            "result": {
-              "duration": 1013000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2111000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 174000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click to user info",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4478000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user send \"abc@gmail..com\" into the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abc@gmail..com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_send_into_the_email_box(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3173000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_click_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 88000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user assert that user account can not update with invalid email address",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_user_account_can_not_update_with_invalid_email_address()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@infoUpdate"
-          },
-          {
-            "name": "@emailInvalid"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User goes to login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9328000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user goes to login page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_goes_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2128000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid username \"ahmetbeyusername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ahmetbeyusername\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2157000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provide valid password \"Ahmet2020.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ahmet2020.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2781000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-09T19:06:42.491Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "TC_02_There should not be an option of any other language other than English or Turkish",
-        "description": "",
-        "id": "user-info-functionality;tc-02-there-should-not-be-an-option-of-any-other-language-other-than-english-or-turkish",
-        "after": [
-          {
-            "result": {
-              "duration": 1072000000,
+              "duration": 723000000,
               "status": "passed"
             },
             "match": {
@@ -1506,71 +98,933 @@
         "steps": [
           {
             "result": {
-              "duration": 2089000000,
+              "duration": 51000000,
               "status": "passed"
             },
-            "line": 33,
-            "name": "user click to account menu",
+            "line": 12,
+            "name": "user clicks to account menu",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 100000000,
+              "duration": 48000000,
               "status": "passed"
             },
-            "line": 34,
-            "name": "user click to user info",
+            "line": 13,
+            "name": "user clicks to password button to edit",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_user_info()"
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 305000000,
+              "duration": 5478000000,
               "status": "passed"
             },
-            "line": 35,
-            "name": "user give an option language dropdown",
+            "line": 14,
+            "name": "verifies there is old password passord bug",
             "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_give_an_option_language_dropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44000000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "user assert that there is no option other than English and Turkish",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_07_StepDefinitions.user_assert_that_there_is_no_option_other_than_English_and_Turkish()"
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_there_is_old_password_bug()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@infoUpdate"
+            "name": "@US_008"
           },
           {
-            "name": "@languageOption"
+            "name": "@US_008-TC_001"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2150000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:29:57.334Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "US_008 TC_002 new password should have at least 1 \"lowercase\" to change line1 color of chart color",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-00\u003cnumbers\u003e-new-password-should-have-at-least-1-\"\u003ccharacter\u003e\"-to-change-line1-color-of-chart-color;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 756000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter new seven chars \"111111a\" and verifies that  should be at least one \"lowercase\" at new password and level chart changes accordingly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111111a\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"lowercase\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_00-2-3-4-5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2854000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:01.769Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "US_008 TC_003 new password should have at least 1 \"uppercase\" to change line1 color of chart color",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-00\u003cnumbers\u003e-new-password-should-have-at-least-1-\"\u003ccharacter\u003e\"-to-change-line1-color-of-chart-color;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 755000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 236000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter new seven chars \"111111A\" and verifies that  should be at least one \"uppercase\" at new password and level chart changes accordingly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111111A\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"uppercase\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_00-2-3-4-5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2100000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:06.902Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "US_008 TC_004 new password should have at least 1 \"special\" to change line1 color of chart color",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-00\u003cnumbers\u003e-new-password-should-have-at-least-1-\"\u003ccharacter\u003e\"-to-change-line1-color-of-chart-color;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 712000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter new seven chars \"111111_\" and verifies that  should be at least one \"special\" at new password and level chart changes accordingly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111111_\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"special\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_00-2-3-4-5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2949000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1047000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:11.263Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "US_008 TC_005 new password should have at least 1 \"digit\" to change line1 color of chart color",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-00\u003cnumbers\u003e-new-password-should-have-at-least-1-\"\u003ccharacter\u003e\"-to-change-line1-color-of-chart-color;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 738000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter new seven chars \"aaaaaa1\" and verifies that  should be at least one \"digit\" at new password and level chart changes accordingly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aaaaaa1\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"digit\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.enter_new_seven_chars_and_verifies_that_should_be_at_least_one_at_new_password_and_level_chart_changes_accordingly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_00-2-3-4-5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2813000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1045000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:16.478Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "US_008 TC_006 New password should have at least 4 chars",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-006-new-password-should-have-at-least-4-chars",
+        "after": [
+          {
+            "result": {
+              "duration": 735000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15830000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "verifies there is one bug that new password accepts at least four char",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_there_is_one_bug_that_new_password_accepts_at_least_four_char()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_006"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User signs in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2903000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to \"http://www.gmibank.com/login\" loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.gmibank.com/login\"",
+                  "offset": 13
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_goes_to_loginpage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides valid username",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides valid password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_provides_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1049000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-11T08:30:37.175Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "US_008 TC_007 New password should be confirmed",
+        "description": "",
+        "id": "user-info-functionality-on-password;us-008-tc-007-new-password-should-be-confirmed",
+        "after": [
+          {
+            "result": {
+              "duration": 729000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user clicks to account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_account_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user clicks to password button to edit",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.user_clicks_to_password_button_to_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5473000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "verifies that new valid password must be confirmed",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_08_StepDefinitions.verifies_that_new_valid_password_must_be_confirmed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_008"
+          },
+          {
+            "name": "@US_008-TC_007"
           }
         ]
       }
     ],
-    "name": "User Info Functionality",
+    "name": "User Info Functionality On Password",
     "description": "",
-    "id": "user-info-functionality",
+    "id": "user-info-functionality-on-password",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_07.feature",
+    "uri": "file:src/test/resources/features/US_08.feature",
     "tags": [
       {
-        "name": "@infoUpdate",
+        "name": "@US_008",
         "type": "Tag",
         "location": {
           "line": 1,
