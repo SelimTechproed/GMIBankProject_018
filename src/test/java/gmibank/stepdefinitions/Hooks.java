@@ -12,19 +12,11 @@ public class Hooks {
     //@Before TestNG deki @BeforeMethod gibidir
     //GLOBAL Hooks annotation
     //her scenario dan once calisir
-    @Before(order = 1)
+    @Before
     public void setUp(){
         //System.out.println("Hooks class- Setup Method");
     }
 
-    //TAGGED Hooks Annotation
-    //Her ozel scenario dan once calisir
- //   @Before(value = "iphone",order = 2)
- //   public void searchIphone(){
-        //System.out.println("Hooks Class - IPHONE method");
-  //  }
-
-    //Her scenario dan sonra
    @After
     public void tearDown(Scenario scenario){
         //System.out.println("Hooks class - tearDown Method ");
