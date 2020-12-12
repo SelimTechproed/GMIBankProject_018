@@ -31,6 +31,4 @@ public class US_05_Page {
     @FindBy (xpath = "//*[@id=\"login-page\"]/div/form/div[2]/div[4]/a/span")
     public WebElement registernew;
 
-
-
 }

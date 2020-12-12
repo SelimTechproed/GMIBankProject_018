@@ -61,7 +61,8 @@ public class US_05_StepDefinitions {
 
     @Given("user click on option to {string} to register")
     public void user_click_on_option_to_to_register(String string) {
-        new Actions(Driver.getDriver()).doubleClick(us05Page.registernew);
+       // new Actions(Driver.getDriver()).doubleClick(us05Page.registernew);
+        us05Page.registernew.click();
         Driver.wait(5);
 
     }
