@@ -1,4 +1,4 @@
-@US_06
+@UserInfo06
 
 Feature: User Info Functionality
 
