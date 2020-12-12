@@ -1,0 +1,228 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User goes to login admin page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 37808000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "logs in user login page as admin",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.logs_in_user_login_page_as_admin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-12T14:28:10.003Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "User should create a description for the new account and it cannot be blank",
+        "description": "",
+        "id": "system-should-allow-admin-to-create-a-new-account;user-should-create-a-description-for-the-new-account-and-it-cannot-be-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 10709000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 167000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on My Operations",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_clicks_on_My_Operations()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 211000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on Manage Account",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_clicks_on_Manage_Account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 237000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on Create a new Account",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_clicks_on_Create_a_new_Account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2275000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user create a description \"MyAccount001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyAccount001\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_create_a_description(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 228000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user fills the balance box \"5500\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5500\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_fills_the_balance_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 315000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user selects a valid account type from Account Type Drop-down \"CREDIT_CARD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CREDIT_CARD\"",
+                  "offset": 62
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_selects_a_valid_account_type_from_Account_Type_Drop_down(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user selects a valid account status type from Account Status Type Drop-down \"ACTIVE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ACTIVE\"",
+                  "offset": 76
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_selects_a_valid_account_status_type_from_Account_Status_Type_Drop_down(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 645000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user selects a valid employee from Employee Drop-down",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_selects_a_valid_employee_from_Employee_Drop_down()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on the Save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.user_clicks_on_the_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "verify transaction done",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_19_StepDefinitions.verify_transaction_done()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateNewAcountUS19"
+          },
+          {
+            "name": "@US19_TC01"
+          }
+        ]
+      }
+    ],
+    "name": "System should allow Admin to create a new Account",
+    "description": "",
+    "id": "system-should-allow-admin-to-create-a-new-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_19.feature",
+    "tags": [
+      {
+        "name": "@CreateNewAcountUS19",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

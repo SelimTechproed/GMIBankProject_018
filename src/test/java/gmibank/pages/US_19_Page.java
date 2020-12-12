@@ -37,20 +37,28 @@ public class US_19_Page {
     @FindBy(xpath = "//input[@name='description']")
     public WebElement description;
 
-    @FindBy(xpath = "//select[@class='form-control is-touched is-dirty av-valid form-control']/option ")
+    @FindBy(id = "tp-account-balance")
+    public WebElement balance;
+
+    @FindBy(id = "tp-account-accountType")
     public WebElement accountType;
 
-    @FindBy(xpath = "//select[@id='tp-account-accountStatusType']/option ")
+    @FindBy(id = "tp-account-accountStatusType")
     public WebElement accountStatusType;
 
-    @FindBy(xpath="//input[@id='tp-account-createDate']")
+    @FindBy(id="tp-account-createDate")
     public WebElement createDate;
 
-    @FindBy(xpath="//input[@id='tp-account-closedDate']")
+    @FindBy(id="tp-account-closedDate")
     public WebElement closedDate;
 
-    @FindBy(xpath="//select[@id='tp-account-employee']")
+    @FindBy(id="tp-account-employee")
     public WebElement employee;
+
+    @FindBy(id="save-entity")
+    public WebElement saveButton;
+
+
 
 
 
