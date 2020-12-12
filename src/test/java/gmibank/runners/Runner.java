@@ -5,16 +5,16 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-      //  strict = true,
+@CucumberOptions
+        (strict = true,
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"},
+                "junit:target/xml-report/cucumber.xml"
+        },
         features = "src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-        tags = "@us_11",
+        tags = "@CreateNewAcountUS19",
         dryRun = false
-
 )
 public class Runner {
 
