@@ -8,5 +8,5 @@ Feature: Login page
     And user click on sign in button
     And user send valid user_username to usernamebox
     And user send valid user_password  to passwordbox
-    And user click on "Sign in" button
+    And user click on SignIn button
     Then verify if the user sign in
