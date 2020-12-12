@@ -1,39 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="62.942">
-<testcase classname="Login page" name="US_005 TC_01 User should not be able to login with invalid username and valid password" time="21.581">
-<system-out><![CDATA[Given user go to "https://gmibank.com/".....................................passed
-And user click to account menu..............................................passed
-And user click on sign in...................................................passed
-And user click on username checkbox.........................................passed
-And user enter a invalid username...........................................passed
-And user click on password checkbox.........................................passed
-And user enter a valid password.............................................passed
-And user click on Sign in button............................................passed
-Then verify if the user sign in.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page" name="US_005 TC_02 User should not be able to login with valid username and invalid password" time="20.288">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.542">
+<testcase classname="Login page" name="US_005 TC_05 User should be given the option to navigate to registration page if they did not register yet" time="27.675">
 <system-out><![CDATA[Given user go to "https://gmibank.com/".....................................passed
 And user click on account menu..............................................passed
 And user click on sign in...................................................passed
-And user click on username checkbox.........................................passed
-And user enter a valid username.............................................passed
-And user click on password checkbox.........................................passed
-And user enter a invalid password...........................................passed
-And user click on Sign in button............................................passed
-Then verify if the user sign in.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page" name="US_005 TC_03 User should not be able to login with invalid username and password" time="20.194">
-<system-out><![CDATA[Given user go to "https://gmibank.com/".....................................passed
-And user click on account menu..............................................passed
-And user click on sign in...................................................passed
-And user click on username checkbox.........................................passed
-And user enter a invalid username...........................................passed
-And user click on password checkbox.........................................passed
-And user enter a invalid password...........................................passed
-And user click on Sign in button............................................passed
-Then verify if the user sign in.............................................passed
+Then user click on option to "Register a new account" to register...........passed
 ]]></system-out>
 </testcase>
 </testsuite>

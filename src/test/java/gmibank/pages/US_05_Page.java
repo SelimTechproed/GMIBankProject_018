@@ -25,5 +25,12 @@ public class US_05_Page {
     @FindBy (xpath = "//*[@class='btn btn-primary']")
     public WebElement signinButton;
 
+    @FindBy (xpath = "//*[@id=\"login-page\"]/div/form/div[2]/div[3]/a/span")
+    public WebElement resetpassword;
+
+    @FindBy (xpath = "//*[@id=\"login-page\"]/div/form/div[2]/div[4]/a/span")
+    public WebElement registernew;
+
+
 
 }

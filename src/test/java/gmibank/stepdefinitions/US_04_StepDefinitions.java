@@ -16,7 +16,7 @@ public class US_04_StepDefinitions {
 
     @Given("user click on account menu")
     public void user_click_on_account_menu() {
-        us04Page.accountmenu.click();
+      us04Page.accountmenu.click();
         Driver.wait(3);
 
     }
@@ -50,6 +50,7 @@ public class US_04_StepDefinitions {
 
     @Then("verify if the user sign in")
     public void verify_if_the_user_sign_in() {
+
 
     }
     //TC02
