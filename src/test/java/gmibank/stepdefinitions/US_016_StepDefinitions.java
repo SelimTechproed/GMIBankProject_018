@@ -45,10 +45,10 @@ public class US_016_StepDefinitions {
         page.password.sendKeys(string);
     }
 
-    @Given("user clicks signIn button")
-    public void user_clicks_signIn_button() {
-        page.signInButton.click();
-    }
+  //  @Given("user clicks signIn button")
+  //  public void user_clicks_signIn_button() {
+   //     page.signInButton.click();
+  //  }
 
     @Then("user should goes My Operations box")
     public void user_should_goes_My_Operations_box() {

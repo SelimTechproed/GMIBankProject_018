@@ -4,8 +4,8 @@ Feature: us_11 tests
     Given user enters gmibank homepage
     And user clicks entry button
     And user clicks  signIn link
-    And user enters admin username "team18_admin"
-    And user enters admin password "Team18admin"
+    And user enters admin username "team18_employee"
+    And user enters admin password "Team18employee"
     And user clicks signIn button
     And user clicks myOperations link
     And user clicks manageCostomers link
