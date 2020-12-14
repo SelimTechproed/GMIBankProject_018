@@ -3,6 +3,7 @@ package gmibank.utilities;
 import com.google.common.base.Function;
 //import gmibank.pages.PasswordCreatePage;
 import gmibank.pages.GmiSignInPage;
+import gmibank.pages.US_03_Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -554,24 +555,25 @@ public class Driver {
 
 
 
-    /*
+
         public static void passwordReliability(){
-            PasswordCreatePage passCreatePage = new PasswordCreatePage();
-            String renk = passCreatePage.line1.getCssValue("background-color");
+            US_03_Page us_03_page = new US_03_Page();
+            String renk = us_03_page.line1.getCssValue("background-color");
             if(renk.contains(ConfigurationReader.getProperty("red"))){
                 System.out.println("Password is Very Weak...");
             }else if(renk.contains(ConfigurationReader.getProperty("orange"))){
                 System.out.println("Password is Fair...");
-            }else if(renk.contains(ConfigurationReader.getProperty("yellow"))){
-                System.out.println("Password is Weak...");
-            }else if(renk.contains(ConfigurationReader.getProperty("green"))){
+        //    }else if(renk.contains(ConfigurationReader.getProperty("yellow"))){
+        //        System.out.println("Password is Weak...");
+            }else if(renk.contains(ConfigurationReader.getProperty("lime"))){
                 System.out.println("Password is Good...");
-            }else if(renk.contains(ConfigurationReader.getProperty("dark_green"))){
+            }else if(renk.contains(ConfigurationReader.getProperty("green"))){
                 System.out.println("Password is Strong...");
-            }}}
+            }
+       }
 
 
-     */
+
      public static void verifyElementClickablle(By by) {
          try {
              assertTrue("Element is clickable : " + by, Driver.getDriver().findElement(by).isEnabled());
