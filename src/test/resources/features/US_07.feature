@@ -34,3 +34,13 @@ Feature: User Info Functionality
     And   user click to user info
     And   user give an option language dropdown
     Then  user assert that there is no option other than English and Turkish
+
+  @emaildeneme
+  Scenario: TC_01_user can not update with invalid email address
+    Given user click to account menu
+    And   user click to user info
+    And   user send  new email into the email box
+    And   user click save button
+    Then  user assert that user account can not update with invalid email address
+
+

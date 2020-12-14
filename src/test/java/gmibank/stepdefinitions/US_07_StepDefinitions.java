@@ -27,6 +27,53 @@ public class US_07_StepDefinitions {
         Driver.wait(3);
         System.out.println(updateInfo.invalidFeedback.getText());
     }
+//2.yol tum secenekleri bir method icinde denedim
+    @Given("user send  new email into the email box")
+    public void user_send_new_email_into_the_email_box() {
+
+        updateInfo.emailBoxClick.clear();        Driver.wait(2);
+        updateInfo.emailBoxClick.sendKeys("abcdefghgmail.com");Driver.wait(2);
+        updateInfo.saveButtonClick.click();        Driver.wait(2);
+        System.out.println(updateInfo.invalidFeedback.getText());
+
+        updateInfo.emailBoxClick.clear();Driver.wait(2);
+        updateInfo.emailBoxClick.sendKeys("abc..def@gmail.com");Driver.wait(2);
+        updateInfo.saveButtonClick.click(); Driver.wait(2);
+        System.out.println(updateInfo.invalidFeedback.getText());
+
+        updateInfo.emailBoxClick.clear();Driver.wait(2);
+        updateInfo.emailBoxClick.sendKeys(".abc@gmail.com");Driver.wait(2);
+        updateInfo.saveButtonClick.click();        Driver.wait(2);
+        System.out.println(updateInfo.invalidFeedback.getText());
+
+        updateInfo.emailBoxClick.clear();Driver.wait(2);
+        updateInfo.emailBoxClick.sendKeys("  @gmail.com");Driver.wait(2);
+        updateInfo.saveButtonClick.click();        Driver.wait(2);
+        System.out.println(updateInfo.invalidFeedback.getText());
+
+        updateInfo.emailBoxClick.clear(); Driver.wait(2);
+        updateInfo.emailBoxClick.sendKeys("abcdef@gmail.");Driver.wait(2);
+        updateInfo.saveButtonClick.click();        Driver.wait(2);
+        System.out.println(updateInfo.invalidFeedback.getText());
+
+        updateInfo.emailBoxClick.clear();Driver.wait(2);
+        updateInfo.emailBoxClick.sendKeys("abc@gmail#arcihe.com");Driver.wait(2);
+        updateInfo.saveButtonClick.click();        Driver.wait(2);
+        System.out.println(updateInfo.invalidFeedback.getText());
+
+        updateInfo.emailBoxClick.clear();Driver.wait(2);
+        updateInfo.emailBoxClick.sendKeys("abcdef@gmail");Driver.wait(2);
+        updateInfo.saveButtonClick.click();        Driver.wait(2);
+        System.out.println(updateInfo.invalidFeedback.getText());
+
+        updateInfo.emailBoxClick.clear();Driver.wait(2);
+        updateInfo.emailBoxClick.sendKeys("abc@gmail..com");Driver.wait(2);
+        updateInfo.saveButtonClick.click();
+        Driver.wait(2);
+        System.out.println(updateInfo.invalidFeedback.getText());
+        Driver.wait(2);
+
+    }
 
     @Then("user assert that user account can not update with invalid email address")
     public void user_assert_that_user_account_can_not_update_with_invalid_email_address() {
@@ -51,6 +98,7 @@ public class US_07_StepDefinitions {
             Assert.assertTrue("user can only select English or Turkish",lang);
 
         }
+
 
     }
 

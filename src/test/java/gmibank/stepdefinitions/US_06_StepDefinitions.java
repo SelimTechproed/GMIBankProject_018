@@ -19,17 +19,18 @@ public class US_06_StepDefinitions {
     public void user_goes_to_login_page() {
        Driver.getDriver().get(ConfigurationReader.getProperty("gmibank_login_url"));
        Driver.wait(2);
+
     }
 
     @Given("user provide valid username {string}")
     public void user_provide_valid_username(String string) {
      us0607Page.userName.sendKeys(string);
-        Driver.wait(2);
+        Driver.wait(3);
     }
     @Given("user provide valid password {string}")
     public void user_provide_valid_password(String string) {
      us0607Page.passWord.sendKeys(string);
-        Driver.wait(2);
+        Driver.wait(3);
     }
     @Given("user click sign in button")
     public void user_click_sign_in_button() {
@@ -53,6 +54,7 @@ public class US_06_StepDefinitions {
         languageOptions=select.getOptions();
         System.out.println(languageOptions.get(0).getText());
         System.out.println(languageOptions.get(1).getText());
+        //Driver.closeDriver();
     }
     @Given("Click in the firstname box and type a new firstname")
     public void click_in_the_firstname_box_and_type_a_new_firstname()  {
@@ -71,6 +73,7 @@ public class US_06_StepDefinitions {
     @Then("Verify that my firstname  have been updated")
     public void verify_that_my_firstname_have_been_updated() {
     Driver.verifyElementDisplayed(us0607Page.settingsSaveMessage);
+    //Driver.closeDriver();
     }
     @Given("Click in the lastname box and type a new lastname")
     public void click_in_the_lastname_box_and_type_a_new_lastname() {
