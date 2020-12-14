@@ -51,4 +51,42 @@ public class US_01_02Page {
     public WebElement registration_alertMessagePassword;
     @FindBy(xpath = "//div[(text() ='Your confirmation password is required.')]")
     public WebElement registration_alertMessageSecondPassword;
+    @FindBy(xpath = "//input[@name='ssn']")
+    public WebElement SSN;
+
+    @FindBy(xpath = "//input[@name='firstname']")
+    public WebElement firstname;
+
+    @FindBy(xpath = "//input[@name='lastname']")
+    public  WebElement lastname;
+
+    @FindBy(id = "address")
+    public WebElement address;
+
+    @FindBy(id = "mobilephone")
+    public WebElement phone;
+
+    @FindBy(xpath = "//input[@name='username']")
+    public WebElement username;
+
+    @FindBy(id = "email")
+    public WebElement email;
+
+    @FindBy(id = "firstPassword")
+    public WebElement password;
+
+    @FindBy(id = "secondPassword")
+    public WebElement confirm;
+
+    @FindBy(id = "register-submit")
+    public WebElement button;
+
+    @FindBy(xpath = "//div[.='Registration saved!']")
+    public WebElement successverify;
+
+    @FindBy(css = ".Toastify__toast-body")
+    public WebElement errorverify;
+
+    @FindBy(xpath = "//div[.='Your SSN is invalid']")
+    public WebElement invalidSSNmessage;
 }
