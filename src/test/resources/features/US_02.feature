@@ -1,116 +1,136 @@
-@US_02
-Feature: US_002 Any field on the registration page should not be left blank
-  Background: All custumer registration tests common links
-    Given user is on "http://gmibank.com/" page
-    And user click on User button
-    And user clicks Registration tab
-  @US02TC01
-  Scenario Outline: US02TC01 SSN Text Box Test
-    And click on SSN TextBox
-    Then user enters a invalid SSN number "<SSNnumber>"
-    Examples: Test data for data tables
-      | SSNnumber  |
-      | 123-567856 |
-      | 76856-9877 |
-      | 538474998  |
-  @US02TC02
-  Scenario Outline: US02TC02 First Name TextBox Test
-    And click on First Name TextBox
-    Then user enters a invalid First Name "<First Name>"
-    Examples: Test data for data tables
-      | First Name |
-      |            |
-  @US02TC03
-  Scenario Outline: US02TC03 Last Name TextBox Test
-    And click on Last Name TextBox
-    Then user enters a invalid Last Name "<Last Name>"
-    Examples: Test data for data tables
-      | Last Name |
-      |           |
-  @US02TC04
-  Scenario Outline: US02TC04 Address TextBox Test
-    And click on Address TextBox
-    Then user enters invalid Address "<Address>"
-    Examples: Test data for data tables
-      | Address |
-      |         |
-  @US02TC05
-  Scenario Outline: US02TC05 Mobile Phone Number TextBox Test
-    And click on Mobile Phone Number TextBox
-    Then user enters a invalid Mobil Phone Number "<Mobile Phone Number>"
-    Examples: Test data for data tables
-      | Mobile Phone Number |
-      |                     |
-      | 2345698760          |
-      | 123-3938393         |
-  @US02TC06
-  Scenario Outline:US02TC06 Username TextBox Test
-    And click on Username TextBox
-    Then user enters invalid username "<Username>"
-    Examples: Test data for data tables
-      | Username |
-      |          |
-  @US02TC07
-  Scenario Outline:US02TC07 Email TextBox Test
-    And click on Email TextBox
-    Then user enters invalid Email "<Email>"
-    Examples: Test data for data tables
-      | Email       |
-      | olmazboyle@    |
-      | olmazboyle.com |
-  @US02TC08
-  Scenario Outline: US02TC08 New password TextBox Test
-    And click on New password TextBox
-    Then user enters invalid New password "<New password>"
-    Examples: Test data for data tables
-      | New password |
-      |              |
-      | 000          |
-      | 1            |
-      | 123          |
-  @US02TC09
-  Scenario: US02TC09 Password strength level must be strong test
-    And Password strength level must be strong
-  @US02TC010
-  Scenario Outline: US02TC010 New password confirmation TextBox Test
-    And click on New password confirmation TextBox
-    Then user enters invalid New password confirmation "<New password confirmation>"
-    Examples: Test data for data tables
-      | New password confirmation |
-      |                           |
-      | 000                       |
-      | 1                         |
-      | 123                       |
-  @US02TC011
-  Scenario: US02TC011 New password confirmation TextBox Test
-    Then user clicks the Register button
-  @US02TC012
-  Scenario Outline: US02TC012 user must enter valid data into SSN TextBox using "-" character.
-    And new click on SSN TextBox
-    And the user must type the character "<Tire>" - when entering a number into the current SSN TextBox.
-    Then ssn the user should not see the text "Your SSN is invalid"
-    Examples: Test data for data tables
-      | Tire        |
-      | 123-765423  |
-      | 60045-2347  |
-      | 999-99-1111 |
-      | 999-99-9999 |
-  @US02TC013
-  Scenario Outline: US02TC013 user must enter valid data in Mobile Phone Number TextBox using "-" character.
-    And new click on Mobile Phone Number TexttBox
-    And user must type the"<Tire>" character - when entering a number into the valid Mobile Phone Number TextBox
-    Then mobil the user should not see the text "Your mobile phone number is invalid".
-    Examples: Test data for data tables
-      | Tire         |
-      | 980678-4554  |
-      | 980-6784554  |
-  @US02TC014
-  Scenario Outline: US02TC014 user must enter valid data in Email TextBox using "@" character and ".com" expression
-    And new click on Email TextBox
-    And the user is entering a valid Email TextBox Email Must use"<email charecter>" @  character and .com expression in TextBox
-    Then email the user should not see the text "This field is invalid".
-    Examples:Test data for data tables
-      | email charecter    |
-      | abc_00gmail.com    |
-      | abc_00@gmail       |
-      | abc_00@gmail.com   |
+@createregistration
+Feature:US_002 Create Regester
+  Background: Create a new register
+    Given Go to registration page "http://gmibank.com/account/register"
+  @demo
+  Scenario: TC_demo User should type uniqe SSN
+    And Type a valid SSN "842-73-9072"
+    And Type firstname "Team02"
+    And Type  lastname "Europe"
+    And Type address "Lahey/Netherland"
+    And Type valid mobile phone number "444-555-6666"
+    And Type username "Team02halleder"
+    And Type  email "team02@gmail.com"
+    And Type valid password "Team.02"
+    And Type valid  password confirmation "Team.02"
+    And Click register button
+    Then Verify the user register is not success
+  @address
+  Scenario: TC_01 User should not see the success message when don't typing address
+    And Type a valid SSN "876-13-9772"
+    And Type firstname "Sami"
+    And Type  lastname "Kacmaz"
+    And Do not enter anything in address box
+    And Type valid mobile phone number "444-666-7777"
+    And Type username "Samibulur"
+    And Type  email "sami@gmail.com"
+    And Type valid password "Sami.25"
+    And Type valid  password confirmation "Sami.25"
+    And Click register button
+    Then Verify the user register is not success
+  @phone
+  Scenario:TC_02 User should not see the success message when don't typing mobile phone number
+    And Type a valid SSN "876-24-9952"
+    And Type firstname "Sami Can"
+    And Type  lastname "Kacmaz"
+    And Type address "Amsterdam/Hollanda"
+    And Do not enter anything in  mobile phone number text box
+    And Type  username "Samiyolcu"
+    And Type email "samican@gmail.com"
+    And Type valid password "Sami.2525"
+    And Type valid  password confirmation "Sami.2525"
+    And Click register button
+    Then Verify the user register is not success
+  @lastname
+  Scenario:TC_03 User should see the red box when don't typing last name
+    And Type a valid SSN "876-32-9765"
+    And Type firstname "Sami Eren"
+    And Do not enter anything in  last name text box
+    And Type address "Rotterdam-Netherland"
+    And Type mobile phone number "444-666-7777"
+    And Type  username "Samizaman"
+    And Type email "samican@gmail.com"
+    And Type valid password "Sami.23"
+    And Type valid  password confirmation "Sami.23"
+    And Click register button
+    Then Verify the message "Your Last Name is required"
+  @SSN
+  Scenario Outline: TC_04 User should see the red box when  typing  any of the punctuation marks or space except "-" in SSN
+    And Type any of the punctuation marks except "-" between the numbers in SSN "<SSN>"
+    And Type firstname "Ali"
+    And Type  lastname "KaLmaz"
+    And Type address "Lahey/Netherland"
+    And Type valid mobile phone number "444-666-7779"
+    And Type username "Alibulur"
+    And Type  email "ali@gmail.com"
+    And Type valid password "Ali.25"
+    And Type valid  password confirmation "Ali.25"
+    And Click register button
+    Then Verify the red box which has alert "Your SSN is invalid"
+    Examples:
+      | SSN            |
+      | 874 42 9756    |
+      | 875 43 9756    |
+      | 879 44 9756    |
+
+  @phonenumber
+  Scenario Outline: TC_05 User should see the red box when  typing  any of the punctuation marks or space  except "-" in moble phone number
+    And Type a valid SSN "<SSN>"
+    And Type firstname "<firstname>"
+    And Type  lastname "<lastname>"
+    And Type address "<address>"
+    And Enter  any of the punctuation marks except "-" between the numbers in mobile phone number text box "<phone>"
+    And Type  username "<username>"
+    And Type email "<email>"
+    And Type valid password "<password>"
+    And Type valid  password confirmation "<confirm>"
+    And Click register button
+    Then Verify the red box which has alert "Your mobile  phone number is invalid"
+    Examples:
+      | SSN        |firstname  |lastname|   address       |phone          |username  |    email          |password|confirm |
+      |836-65-9757 | Ali Riza  |Kalmaz  | Lahey/Netherland| 444/666/7774  |Aliibulur |aliiriza@gmail.com | Ali.25 | Ali.25 |
+      |837-66-9957 |Ali Kemal  |Kalir   | Balk/Netherland | 444 666 7774  |Alibulur  |aliriza@gmail.com  | Ali.259| Ali.259|
+
+  @defectemail
+  Scenario:TC_06 User should see the red box when  typing  without "@"  mark
+    And Type a valid SSN "876-32-9750"
+    And Type firstname "Ali Aydın"
+    And Type  lastname "Konar"
+    And Type address "Lahey-Netherland"
+    And Type mobile phone number "444-666-7767"
+    And Type  username "Alikonar"
+    And Enter an email id without -@- mark "aliikonargmail.com"
+    And Type valid password "Ali.25"
+    And Type valid  password confirmation "Ali.25"
+    And Click register button
+    Then Verify the red box which has alert "This field is invalid"
+
+  @missingemail
+  Scenario Outline:TC_07 User should see the red box when typing which is extention is ".c" after "@" mark
+    And Type a valid SSN "<SSN>"
+    And Type firstname "Ali Aydın"
+    And Type  lastname "Konar"
+    And Type address "Lahey-Netherland"
+    And Type mobile phone number "444-666-7767"
+    And Type  username "Alikonar"
+    And Enter an email id which extension is  -.c- after -@- mark "<email>"
+    And Type valid password "Ali.25"
+    And Type valid  password confirmation "Ali.25"
+    And Click register button
+    Then Verify the red box which has alert "This field is invalid"
+    Examples:
+      |    SSN      |    email           |
+      | 816-62-9059 | aliikon@gmail.c    |
+      | 827-62-9159 | aliikon@gmail.co   |
+
+
+
+
+
+
+
+
+
+
+
+
