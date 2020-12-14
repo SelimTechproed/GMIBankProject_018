@@ -7,10 +7,9 @@ public class US_12_Page {
     public US_12_Page() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
     @FindBy(xpath = "//*[@id='username']")
     public WebElement benutzernamen;
-    @FindBy(xpath = "//*[@id='password']")
+    @FindBy (xpath = "//*[@id='password']")
     public WebElement passwort;
     @FindBy(xpath = "//*[@id=\"login-page\"]/div/form/div[3]/button[2]/span")
     public WebElement loginbutton;
@@ -18,35 +17,35 @@ public class US_12_Page {
     public WebElement myOperations;
     @FindBy(className = "dropdown-item")
     public WebElement manageCustomers;
-    @FindBy(xpath = "//span[.='ID']")
+    @FindBy (xpath = "//span[.='ID']")
     public WebElement idnummer;
-    @FindBy(xpath = "//span[.='First Name']")
+    @FindBy (xpath = "//span[.='First Name']")
     public WebElement firstname;
-    @FindBy(xpath = "//span[.='Last Name']")
+    @FindBy (xpath = "//span[.='Last Name']")
     public WebElement lastname;
-    @FindBy(xpath = "//span[.='Middle Initial']")
+    @FindBy (xpath = "//span[.='Middle Initial']")
     public WebElement middleinitial;
-    @FindBy(xpath = "//*[.='Email']")
+    @FindBy (xpath = "//*[.='Email']")
     public WebElement email;
-    @FindBy(xpath = "//*[.='Mobile Phone Number']")
+    @FindBy (xpath = "//*[.='Mobile Phone Number']")
     public WebElement mobilePhone;
-    @FindBy(xpath = "//*[.='Phone Number']")
+    @FindBy (xpath = "//*[.='Phone Number']")
     public WebElement phoneNumber;
-    @FindBy(xpath = "//*[.='Address']")
+    @FindBy (xpath = "//*[.='Address']")
     public WebElement adress;
-    @FindBy(xpath = "//*[.='Create Date']")
+    @FindBy (xpath = "//*[.='Create Date']")
     public WebElement createDate;
-    @FindBy(xpath = "//*[.='View']")
+    @FindBy (xpath = "//*[.='View']")
     public WebElement viewButton;
-    @FindBy(xpath = "//*[.='Edit']")
+    @FindBy (xpath = "//*[.='Edit']")
     public WebElement editButton;
-    @FindBy(xpath = "//*[.='Delete']")
+    @FindBy (xpath = "//*[@id=\"app-view-container\"]/div[1]/div/div/div/div[1]/div/table/tbody/tr[1]/td[10]/div/a[3]")
     public WebElement deleteButton;
-    @FindBy(xpath = "(//*[@id=\"app-view-container\"]/div[1]/div/div/div/div/a[2]/span/span")
+    @FindBy (xpath = "//*[@class='btn btn-primary']")
     public WebElement edit2Button;
     @FindBy(xpath = "//*[@id=\"tp-customer-id\"]")
     public WebElement idNum;
-    @FindBy(xpath = "//*[@id=\"tp-customer-firstName\"]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-firstName\"]")
     public WebElement vorname;
     @FindBy(xpath = "//*[@id=\"tp-customer-lastName\"]")
     public WebElement nachname;
@@ -54,29 +53,28 @@ public class US_12_Page {
     public WebElement intial;
     @FindBy(xpath = "//*[@id=\"tp-customer-email\"]")
     public WebElement email2;
-    @FindBy(xpath = "///*[@id=\"tp-customer-mobilePhoneNumber\"]")
+    @FindBy (id = "tp-customer-mobilePhoneNumber")
     public WebElement mobilenum;
-    @FindBy(xpath = "//*[@id=\"tp-customer-phoneNumber\"]")
+    @FindBy (id = "tp-customer-phoneNumber")
     public WebElement phonnummer;
-    @FindBy(xpath = "//*[@id=\"tp-customer-zipCode\"]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-zipCode\"]")
     public WebElement zipcode;
-    @FindBy(xpath = "//*[@id=\"tp-customer-address\"]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-address\"]")
     public WebElement address;
-    @FindBy(xpath = "//*[@id=\"tp-customer-city\"]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-city\"]")
     public WebElement stadt;
-    @FindBy(xpath = "//*[@id=\"tp-customer-ssn\"]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-ssn\"]")
     public WebElement ssn;
-    @FindBy(xpath = "//*[@id=\"tp-customer-createDate\"]")
+    @FindBy (id = "tp-customer-createDate")
     public WebElement createdate;
-    @FindBy(xpath = "//*[@id=\"tp-customer-country\"]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-country\"]")
     public WebElement region;
-    @FindBy(xpath = "//*[@id=\"tp-customer-state\"]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-state\"]")
     public WebElement state;
-    @FindBy(xpath = "//*[@id=\"tp-customer-user\"]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-user\"]")
     public WebElement user;
-    @FindBy(xpath = "//*[@id=\"tp-customer-account\"]/option[8]")
+    @FindBy (xpath = "//*[@id=\"tp-customer-account\"]/option[8]")
     public WebElement account;
-    @FindBy(xpath = "//*[@id=\"save-entity\"]/span")
+    @FindBy (xpath = "//*[@id=\"save-entity\"]/span")
     public WebElement save;
-
 }

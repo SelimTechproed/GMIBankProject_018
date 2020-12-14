@@ -5,16 +5,16 @@ Feature: US_16 tests
     Given user goes to gmibank homepage
     And user goes to entry
     And user goes to signIn page
-    And user logs in with the valid username "Hakan"
-    And user logs in with the valid password "Hakanyanbakan724567,"
+    And user logs in with the valid username "aaabbb"
+    And user logs in with the valid password "AaaBbb-21"
     And user clicks signIn button
     Then user should goes My Operations box
 
   @TC1601
   Scenario: TC1601 User should have at least 2 accounts
     Given user should goes My Accounts box
-    And user verify Account Type1 "30243"
-    And user verify Account Type2 "32514"
+    And user verify Account Type1 "19669"
+    And user verify Account Type2 "19670"
     Then user signOut from the page
 
   @TC1602
