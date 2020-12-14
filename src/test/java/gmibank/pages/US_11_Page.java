@@ -1,17 +1,13 @@
 package gmibank.pages;
-
 import gmibank.utilities.Driver;
 import io.cucumber.java.tr.Fakat;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 public class US_11_Page {
-
     public US_11_Page() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
     @FindBy(xpath = "//a[@href='#']")
     public WebElement userIcon;
     @FindBy(xpath = "//span[.='Sign in']")
@@ -34,15 +30,12 @@ public class US_11_Page {
     public WebElement signOut;
     @FindBy (id = "tp-customer-user")
     public WebElement dropBox;
-    @FindBy(xpath="//select[@id=‘tp-customer-account’]")
+    @FindBy(xpath="//*[@id=\"tp-customer-account\"]")
     public WebElement accountDropBox;
     @FindBy (id="tp-customer-zelleEnrolled")
     public WebElement zelleEnrolledBox;
     @FindBy(id="save-entity")
     public WebElement saveButton;
-
-
-
-
-
-    }
+    @FindBy(xpath="//*[@id=\"createDateLabel\"]/span")
+    public WebElement coloredText;
+}

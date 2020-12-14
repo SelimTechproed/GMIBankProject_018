@@ -14,16 +14,16 @@ Feature:Password Functionality
     Then  verifies there is old password passord bug
 
   @US_008-TC_00-2-3-4-5
-  Scenario Outline:US_008 TC_00<numbers> new password should have at least 1 "<character>" to change line1 color of chart color
+  Scenario Outline:US_008 TC_00 new password should have at least 1 "<character>" to change line1 color of chart color
     Given user clicks to account menu
     And   user clicks to password button to edit
     Then  enter new seven chars "<password>" and verifies that  should be at least one "<character>" at new password and level chart changes accordingly
     Examples:
-      |numbers|character|password|
-      |2  |lowercase |111111a|
-      |3  |uppercase |111111A|
-      |4 |special |111111_|
-      | 5  |digit |aaaaaa1|
+      |character|password|
+      |lowercase |111111a|
+      |uppercase |111111A|
+      |special |111111_|
+      |digit |aaaaaa1|
 
   @US_008-TC_006
   Scenario:US_008 TC_006 New password should have at least 4 chars
