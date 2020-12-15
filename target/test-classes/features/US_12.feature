@@ -29,8 +29,7 @@ Feature: Gmi Bank
     And Benutzer sieht und klickt auf die Button Edit
   @US_12-TC_04
   Scenario: The Edit portal can allow user to create or update the user info
-    Given Benutzer sieht und klickt auf die Edit
-    And Benutzer muss Id Nummer geben
+    Given TC_04 Benutzer sieht und klickt auf die Edit
     And Benutzer muss First Name geben
     And Benutzer muss Last Name geben
     And Benutzer muss Middle Initial geben
