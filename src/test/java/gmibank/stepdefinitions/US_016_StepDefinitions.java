@@ -95,6 +95,7 @@ public class US_016_StepDefinitions {
     @Given("user should selects and clicks first account")
     public void user_should_selects_and_clicks_first_account() {
         Select select = new Select(page.idFromDropdown);
+        Driver.wait(2);
         select.selectByIndex(2);
         Driver.wait(2);
         actions.sendKeys(Keys.TAB).perform();
