@@ -32,7 +32,7 @@ public class US_015_StepDefinitions {
 
     @Given("user should sees all Account Types")
     public void user_should_sees_all_Account_Types() {
-        for (WebElement element : page.accountType) {
+        for (WebElement element : page.accountType.subList(0, 25)) {
             System.out.println("Account Types :" + element.getText());
             boolean account = element.isDisplayed();
             Assert.assertTrue("Test Passed", account);
@@ -43,7 +43,7 @@ public class US_015_StepDefinitions {
 
     @Given("user should sees all Balance")
     public void user_should_sees_all_Balance() {
-        for (WebElement element : page.balance) {
+        for (WebElement element : page.balance.subList(0 , 25)) {
             System.out.println("Balance :" + element.getText());
             boolean balance = element.isDisplayed();
             Assert.assertTrue("Test Passed", balance);
@@ -63,7 +63,7 @@ public class US_015_StepDefinitions {
     public void user_should_clicks_and_sees_View_Transaction() {
 
         List<String> list = new ArrayList<>();
-        for (WebElement element : page.transactions) {
+        for (WebElement element : page.transactions.subList(0 , 10)) {
             list.add(element.getText());
             list.stream().forEach(System.out::println);
             boolean transaction = element.isDisplayed();
