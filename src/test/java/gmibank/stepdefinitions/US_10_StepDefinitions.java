@@ -1,5 +1,6 @@
 package gmibank.stepdefinitions;
 
+import com.github.javafaker.Faker;
 import gmibank.pages.US_10_Page;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 public class US_10_StepDefinitions {
 
     US_10_Page us_10_page = new US_10_Page();
+    Faker faker = new Faker();
 
     @Given("US10 user on the login page {string}")
     public void us10_user_on_the_login_page(String string) {
@@ -72,7 +74,8 @@ public class US_10_StepDefinitions {
 
     @Given("US10 Send adress to adress box")
     public void us10_Send_adress_to_adress_box() {
-        us_10_page.addressBox.sendKeys("Fizan");
+        String adress = faker.address().fullAddress();
+        us_10_page.addressBox.sendKeys(adress);
     }
 
     @Given("US10 Verify city box required message")
@@ -85,7 +88,8 @@ public class US_10_StepDefinitions {
 
     @Given("US10 Send city name to city box")
     public void us10_Send_city_name_to_city_box() {
-        us_10_page.city.sendKeys("Tokyo");
+        String city = faker.address().city();
+        us_10_page.city.sendKeys(city);
     }
 
     @Given("US10 Select country name to country dropdown")
@@ -96,7 +100,8 @@ public class US_10_StepDefinitions {
 
     @Given("US10 Send state name to state box")
     public void us10_Send_state_name_to_state_box() {
-        us_10_page.stateBox.sendKeys("Las Vegas");
+        String state = faker.address().state();
+        us_10_page.stateBox.sendKeys(state);
     }
 
 
