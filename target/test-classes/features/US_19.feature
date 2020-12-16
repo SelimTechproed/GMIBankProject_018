@@ -12,8 +12,8 @@ Feature: System should allow Admin to create a new Account
     Given user clicks on My Operations
     And   user clicks on Manage Account
     And   user clicks on Create a new Account
-    And   user create a description "MyAccount001"
-    And   user fills the balance box "5500"
+    And   user create a description "MyAccount002"
+    And   user fills the balance box "550"
     And   user selects a valid account type from Account Type Drop-down "CREDIT_CARD"
     And   user selects a valid account status type from Account Status Type Drop-down "ACTIVE"
     And   user selects a valid employee from Employee Drop-down
