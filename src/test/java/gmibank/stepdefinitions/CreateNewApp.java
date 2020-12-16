@@ -19,7 +19,7 @@ public class CreateNewApp {
     public void user_enters_ssn_number_as_SSN() {
         Faker faker=new Faker();
 
-        Driver.waitAndSendText();
+
     }
 
     @Then("user enters firstname and lastname as firstname and lastname")
