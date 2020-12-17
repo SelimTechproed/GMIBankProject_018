@@ -6,13 +6,8 @@ import gmibank.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
-import io.restassured.mapper.ObjectMapperDeserializationContext;
-import io.restassured.mapper.ObjectMapperSerializationContext;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-
 import java.io.IOException;
-
 import static io.restassured.RestAssured.*;
 
 public class CustomerApiStepDef {
@@ -28,14 +23,14 @@ public class CustomerApiStepDef {
                 ContentType.JSON,
                 "Accept",
                 ContentType.JSON)
-                .when()
+         .when()
                 .get(api_endpoint)
-                .then()
+         .then()
                 .contentType(ContentType.JSON)
                 .statusCode(200)
                 .extract()
                 .response();
-     //   response.prettyPrint();
+     response.prettyPrint();
 
         /*  alternatif kullanim
 
@@ -58,7 +53,7 @@ public class CustomerApiStepDef {
     @Given("user deserialization customer data json to java pojo")
     public void user_deserialization_customer_data_json_to_java_pojo() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Customer [] customers = objectMapper.readValue(response.asString(),Customer[].class);
+        Customer[] customers = objectMapper.readValue(response.asString(),Customer[].class);
      //   System.out.println(customers[0].getFirstName()); //sadece ilk firstname
         for ( int i = 0; i< customers.length ; i++){
             System.out.println(customers[i].getFirstName());

@@ -1,3 +1,7 @@
 /target/
 .idea
 /*.iml
+debug.log
+.gitignore
+runners
+NewFile.txt
