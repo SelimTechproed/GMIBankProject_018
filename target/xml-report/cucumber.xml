@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.745">
+<testcase classname="Register Workflow" name="Register new users for GMI Bank" time="0.076">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user is on the registration page......................................undefined
+And user enters ssn number as SSN...........................................undefined
+Then user enters firstname and lastname as firstname and lastname...........undefined
+When user provides address address..........................................undefined
+Then user provides mobilephone as mobilephone...............................undefined
+And user provides a username username.......................................undefined
+Then user provides email id as email........................................undefined
+When user enters the password as firstpassword..............................undefined
+And user confirms the new password secondpassword...........................undefined
+Then user clicks on register button and sees the success message as message.undefined
+]]></failure>
+</testcase>
+</testsuite>
