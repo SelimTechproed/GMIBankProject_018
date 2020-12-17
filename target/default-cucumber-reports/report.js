@@ -1,507 +1,108 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_05.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/createnewapplicant.feature");
 formatter.feature({
-  "name": "Login page",
+  "name": "Register Workflow",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@US_005erol"
+      "name": "@createnewapplicant"
     }
   ]
 });
 formatter.scenario({
-  "name": "US_005 TC_01 User should not be able to login with invalid username and valid password",
+  "name": "Register new users for GMI Bank",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_005erol"
-    },
-    {
-      "name": "@US_005-TC_01"
+      "name": "@createnewapplicant"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user go to \"https://gmibank.com/\"",
+  "name": "user is on the registration page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user click to account menu",
+  "name": "user enters ssn number as SSN",
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user click on sign in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on username checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_username_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter a invalid username",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_username()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on password checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_password_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter a valid password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_valid_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_Sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify if the user sign in",
+  "name": "user enters firstname and lastname as firstname and lastname",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.verify_if_the_user_sign_in()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "US_005 TC_02 User should not be able to login with valid username and invalid password",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_005erol"
-    },
-    {
-      "name": "@US_005-TC_02"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user go to \"https://gmibank.com/\"",
-  "keyword": "Given "
+  "name": "user provides address address",
+  "keyword": "When "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user click on account menu",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_account_menu()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on sign in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on username checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_username_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter a valid username",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_valid_username()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on password checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_password_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter a invalid password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_Sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify if the user sign in",
+  "name": "user provides mobilephone as mobilephone",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.verify_if_the_user_sign_in()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "US_005 TC_03 User should not be able to login with invalid username and password",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_005erol"
-    },
-    {
-      "name": "@US_005-TC-03"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user go to \"https://gmibank.com/\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on account menu",
+  "name": "user provides a username username",
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_account_menu()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user click on sign in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on username checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_username_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter a invalid username",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_username()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on password checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_password_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter a invalid password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_Sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify if the user sign in",
+  "name": "user provides email id as email",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.verify_if_the_user_sign_in()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "US_005 TC_04 User with invalid credentials should be given an option to reset their password",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_005erol"
-    },
-    {
-      "name": "@US_005-TC-04"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user go to \"https://gmibank.com/\"",
-  "keyword": "Given "
+  "name": "user enters the password as firstpassword",
+  "keyword": "When "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user click on account menu",
+  "name": "user confirms the new password secondpassword",
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_account_menu()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user click on sign in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on username checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_username_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter a valid username",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_valid_username()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on password checkbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_password_checkbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter a invalid password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_Sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on option to \"Did you forget your password?\" to reset password",
+  "name": "user clicks on register button and sees the success message as message",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_option_to_to_reset_password(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "US_005 TC_05 User should be given the option to navigate to registration page if they did not register yet",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_005erol"
-    },
-    {
-      "name": "@US_005-TC-05"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user go to \"https://gmibank.com/\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on account menu",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_account_menu()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on sign in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on option to \"Register a new account\" to register",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_option_to_to_register(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

@@ -1,29 +1,27 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-12-17T18:51:00.004Z",
+        "start_timestamp": "2020-12-12T20:34:21.516Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 5,
-        "name": "US_005 TC_01 User should not be able to login with invalid username and valid password",
+        "line": 4,
+        "name": "Register new users for GMI Bank",
         "description": "",
-        "id": "login-page;us-005-tc-01-user-should-not-be-able-to-login-with-invalid-username-and-valid-password",
+        "id": "register-workflow;register-new-users-for-gmi-bank",
         "after": [
           {
             "result": {
-              "duration": 1413000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -35,708 +33,113 @@
         "steps": [
           {
             "result": {
-              "duration": 12516000000,
-              "status": "passed"
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user is on the registration page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
             "line": 6,
-            "name": "user go to \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 11
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-            },
-            "keyword": "Given "
+            "name": "user enters ssn number as SSN",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 2297000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 7,
-            "name": "user click to account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_StepDefinitions.user_click_to_account_menu()"
-            },
-            "keyword": "And "
+            "name": "user enters firstname and lastname as firstname and lastname",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3204000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 8,
-            "name": "user click on sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-            },
-            "keyword": "And "
+            "name": "user provides address address",
+            "match": {},
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 125000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
-            "name": "user click on username checkbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_username_checkbox()"
-            },
-            "keyword": "And "
+            "name": "user provides mobilephone as mobilephone",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3093000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 10,
-            "name": "user enter a invalid username",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_username()"
-            },
+            "name": "user provides a username username",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 152000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 11,
-            "name": "user click on password checkbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_password_checkbox()"
-            },
-            "keyword": "And "
+            "name": "user provides email id as email",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2103000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 12,
-            "name": "user enter a valid password",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_valid_password()"
-            },
-            "keyword": "And "
+            "name": "user enters the password as firstpassword",
+            "match": {},
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 3147000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 13,
-            "name": "user click on Sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_Sign_in_button()"
-            },
+            "name": "user confirms the new password secondpassword",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 14,
-            "name": "verify if the user sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.verify_if_the_user_sign_in()"
-            },
+            "name": "user clicks on register button and sees the success message as message",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US_005erol"
-          },
-          {
-            "name": "@US_005-TC_01"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-17T18:51:28.368Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "US_005 TC_02 User should not be able to login with valid username and invalid password",
-        "description": "",
-        "id": "login-page;us-005-tc-02-user-should-not-be-able-to-login-with-valid-username-and-invalid-password",
-        "after": [
-          {
-            "result": {
-              "duration": 1309000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9572000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user go to \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 11
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3160000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user click on account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_account_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3185000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click on sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 116000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user click on username checkbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_username_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3117000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user enter a valid username",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_valid_username()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 97000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user click on password checkbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_password_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2110000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "user enter a invalid password",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3161000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "user click on Sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "verify if the user sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.verify_if_the_user_sign_in()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_005erol"
-          },
-          {
-            "name": "@US_005-TC_02"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-17T18:51:54.252Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "US_005 TC_03 User should not be able to login with invalid username and password",
-        "description": "",
-        "id": "login-page;us-005-tc-03-user-should-not-be-able-to-login-with-invalid-username-and-password",
-        "after": [
-          {
-            "result": {
-              "duration": 1263000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9134000000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "user go to \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 11
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3122000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "user click on account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_account_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3174000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "user click on sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 95000000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "user click on username checkbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_username_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3127000000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "user enter a invalid username",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_username()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 147000000,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "user click on password checkbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_password_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2095000000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "user enter a invalid password",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3144000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "user click on Sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "verify if the user sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.verify_if_the_user_sign_in()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_005erol"
-          },
-          {
-            "name": "@US_005-TC-03"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-17T18:52:19.658Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 41,
-        "name": "US_005 TC_04 User with invalid credentials should be given an option to reset their password",
-        "description": "",
-        "id": "login-page;us-005-tc-04-user-with-invalid-credentials-should-be-given-an-option-to-reset-their-password",
-        "after": [
-          {
-            "result": {
-              "duration": 1383000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9245000000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "user go to \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 11
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3147000000,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "user click on account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_account_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3218000000,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "user click on sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 86000000,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "user click on username checkbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_username_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3152000000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "user enter a valid username",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_valid_username()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 176000000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "user click on password checkbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_password_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2099000000,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "user enter a invalid password",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_enter_a_invalid_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3172000000,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "user click on Sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2135000000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "user click on option to \"Did you forget your password?\" to reset password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Did you forget your password?\"",
-                  "offset": 24
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_option_to_to_reset_password(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_005erol"
-          },
-          {
-            "name": "@US_005-TC-04"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-17T18:52:47.532Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 53,
-        "name": "US_005 TC_05 User should be given the option to navigate to registration page if they did not register yet",
-        "description": "",
-        "id": "login-page;us-005-tc-05-user-should-be-given-the-option-to-navigate-to-registration-page-if-they-did-not-register-yet",
-        "after": [
-          {
-            "result": {
-              "duration": 1342000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9281000000,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "user go to \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 11
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_go_to(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3147000000,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "user click on account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_account_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3181000000,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "user click on sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_04_StepDefinitions.user_click_on_sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5167000000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "user click on option to \"Register a new account\" to register",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Register a new account\"",
-                  "offset": 24
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_05_StepDefinitions.user_click_on_option_to_to_register(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_005erol"
-          },
-          {
-            "name": "@US_005-TC-05"
+            "name": "@createnewapplicant"
           }
         ]
       }
     ],
-    "name": "Login page",
+    "name": "Register Workflow",
     "description": "",
-    "id": "login-page",
+    "id": "register-workflow",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_05.feature",
+    "uri": "file:src/test/resources/features/createnewapplicant.feature",
     "tags": [
       {
-        "name": "@US_005erol",
+        "name": "@createnewapplicant",
         "type": "Tag",
         "location": {
-          "line": 1,
+          "line": 2,
           "column": 1
         }
       }
