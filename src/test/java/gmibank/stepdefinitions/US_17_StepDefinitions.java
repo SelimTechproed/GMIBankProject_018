@@ -1,6 +1,6 @@
 package gmibank.stepdefinitions;
 import com.github.javafaker.Faker;
-import gmibank.pages.US_08_Page;
+
 import gmibank.pages.US_17_Page;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
