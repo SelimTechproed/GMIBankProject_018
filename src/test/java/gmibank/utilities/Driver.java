@@ -1,8 +1,8 @@
 package gmibank.utilities;
 
 import com.google.common.base.Function;
-//import gmibank.pages.PasswordCreatePage;
 import gmibank.pages.GmiSignInPage;
+
 import gmibank.pages.US_03_Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
@@ -14,13 +14,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.*;
-
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -551,14 +549,9 @@ public class Driver {
         select.selectByVisibleText(value);
     }
 
-
-
-
-
-
         public static void passwordReliability(){
-            US_03_Page us_03_page = new US_03_Page();
-            String renk = us_03_page.line1.getCssValue("background-color");
+
+            String renk = US_03_Page.us_03_page.line1.getCssValue("background-color");
             if(renk.contains(ConfigurationReader.getProperty("red"))){
                 System.out.println("Password is Very Weak...");
             }else if(renk.contains(ConfigurationReader.getProperty("orange"))){
@@ -571,8 +564,6 @@ public class Driver {
                 System.out.println("Password is Strong...");
             }
        }
-
-
 
      public static void verifyElementClickablle(By by) {
          try {

@@ -1,7 +1,10 @@
-@US_26
+@US_26_Ahmet
+
 Feature: US_26 System should allow to update countries using api end point
+
   Background:update all country
     Given use api end point "https://www.gmibank.com/api/tp-countries"
+
   @allCountry
   Scenario: TC_01 get all countries information as De-serialization
     And   get all countries information as De-serialization
