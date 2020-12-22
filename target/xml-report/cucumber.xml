@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="4" time="0.308">
+<testcase classname="Gmi Bank" name="&quot;First Name Last Name Middle..&quot; im Model Costumers anzeigt werden soll" time="0.066">
+<system-out><![CDATA[Given Benutzer geht zu "https://gmibank.com/"...............................skipped
+And Benutzer sendet einen gültigen Benutzernamen "team18_employee"..........skipped
+And Benutzer sendet ein gültiges Passwort "Team18employee"..................skipped
+And Benutzer klickt auf die login button....................................skipped
+And Benutzer klickt auf My Operations.......................................skipped
+And Benutzer klickt auf Button Manage Custormes.............................skipped
+Given Benutzer muss Id sehen................................................skipped
+And Benutzer muss First Name sehen..........................................skipped
+And Benutzer muss Last Name sehen...........................................skipped
+And Benutzer muss Middle Initial sehen......................................skipped
+And Benutzer muss Email sehen...............................................skipped
+And Benutzer muss MobilePhone Number sehen..................................skipped
+And Benutzer muss Phone Number sehen........................................skipped
+And Benutzer soll Adress sehen..............................................skipped
+Then Benutzer muss Create Date sehen........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Gmi Bank" name="&quot;Die Button view,Edit,Delete sollten anklickbar und auf der Kundenseite sichtbar sein" time="0.008">
+<system-out><![CDATA[Given Benutzer geht zu "https://gmibank.com/"...............................skipped
+And Benutzer sendet einen gültigen Benutzernamen "team18_employee"..........skipped
+And Benutzer sendet ein gültiges Passwort "Team18employee"..................skipped
+And Benutzer klickt auf die login button....................................skipped
+And Benutzer klickt auf My Operations.......................................skipped
+And Benutzer klickt auf Button Manage Custormes.............................skipped
+Given Benutzer sieht und klickt auf die View................................skipped
+And Benutzer sieht und klickt auf die Edit..................................skipped
+Then Benutzer sieht und klickt auf die Delete...............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Gmi Bank" name="Die Button View Bearbeiten geben, über die alle Kundeninformationen ausgefüllt werden können" time="0.006">
+<system-out><![CDATA[Given Benutzer geht zu "https://gmibank.com/"...............................skipped
+And Benutzer sendet einen gültigen Benutzernamen "team18_employee"..........skipped
+And Benutzer sendet ein gültiges Passwort "Team18employee"..................skipped
+And Benutzer klickt auf die login button....................................skipped
+And Benutzer klickt auf My Operations.......................................skipped
+And Benutzer klickt auf Button Manage Custormes.............................skipped
+Given Benutzer sieht und klickt auf die View................................skipped
+And Benutzer sieht und klickt auf die Button Edit...........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Gmi Bank" name="The Edit portal can allow user to create or update the user info" time="0.009">
+<skipped><![CDATA[Given Benutzer geht zu "https://gmibank.com/"...............................skipped
+And Benutzer sendet einen gültigen Benutzernamen "team18_employee"..........skipped
+And Benutzer sendet ein gültiges Passwort "Team18employee"..................skipped
+And Benutzer klickt auf die login button....................................skipped
+And Benutzer klickt auf My Operations.......................................skipped
+And Benutzer klickt auf Button Manage Custormes.............................skipped
+Given TC_04 Benutzer sieht und klickt auf die Edit..........................undefined
+And Benutzer muss First Name geben..........................................skipped
+And Benutzer muss Last Name geben...........................................skipped
+And Benutzer muss Middle Initial geben......................................skipped
+And Benutzer muss Email geben...............................................skipped
+And Benutzer muss MobilePhone Number geben..................................skipped
+And Benutzer muss Phone Number geben........................................skipped
+And Benutzer soll Adress geben..............................................skipped
+Then Benutzer muss Create Date geben........................................skipped
+]]></skipped>
+</testcase>
+</testsuite>
