@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.84">
-<testcase classname="&quot;System should allow to read all customers info using api end point" name="TC001 : Read all customers" time="24.254">
-<system-out><![CDATA[Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers".passed
-And user deserializers country data as json to java.........................passed
-Then user validates the data................................................passed
-]]></system-out>
-</testcase>
-</testsuite>

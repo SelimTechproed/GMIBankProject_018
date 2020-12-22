@@ -5,6 +5,8 @@ import com.google.common.base.Function;
 import gmibank.com.pages.GmiSignInPage;
 import gmibank.com.pages.US_03_Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -552,10 +554,6 @@ public class Driver {
     }
 
 
-
-
-
-
         public static void passwordReliability(){
             US_03_Page us_03_page = new US_03_Page();
             String renk = us_03_page.line1.getCssValue("background-color");
@@ -582,6 +580,7 @@ public class Driver {
          }
 
      }
+
 
 
   }
