@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "gmibank/com/stepdefinitions",
-        tags = "@CountryApi",
+        tags = "@US20",
         dryRun = false
 
 )
