@@ -1,333 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "line": 4,
-        "name": "Gmi Bank Startseite",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "Benutzer geht zu \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 17
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_geht_zu(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "Benutzer sendet einen gültigen Benutzernamen \"team18_employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"team18_employee\"",
-                  "offset": 45
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sendet_einen_gültigen_Benutzernamen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "Benutzer sendet ein gültiges Passwort \"Team18employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team18employee\"",
-                  "offset": 38
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sendet_ein_gültiges_Passwort(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "Benutzer klickt auf die login button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_die_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "Benutzer klickt auf My Operations",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_My_Operations()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Benutzer klickt auf Button Manage Custormes",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_Button_Manage_Custormes()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-14T20:55:37.659Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "\"First Name Last Name Middle..\" im Model Costumers anzeigt werden soll",
-        "description": "",
-        "id": "gmi-bank;\"first-name-last-name-middle..\"-im-model-costumers-anzeigt-werden-soll",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "Benutzer muss Id sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Id_sehen()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "Benutzer muss First Name sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_First_Name_sehen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "Benutzer muss Last Name sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Last_Name_sehen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "Benutzer muss Middle Initial sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Middle_Initial_sehen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 19,
-            "name": "Benutzer muss Email sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Email_sehen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "Benutzer muss MobilePhone Number sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_MobilePhone_Number_sehen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "Benutzer muss Phone Number sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Phone_Number_sehen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "Benutzer soll Adress sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_soll_Address_sehen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "Benutzer muss Create Date sehen",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Create_Date_sehen()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_12"
-          },
-          {
-            "name": "@US_12-TC_01"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Gmi Bank Startseite",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "Benutzer geht zu \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 17
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_geht_zu(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "Benutzer sendet einen gültigen Benutzernamen \"team18_employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"team18_employee\"",
-                  "offset": 45
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sendet_einen_gültigen_Benutzernamen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "Benutzer sendet ein gültiges Passwort \"Team18employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team18employee\"",
-                  "offset": 38
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sendet_ein_gültiges_Passwort(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "Benutzer klickt auf die login button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_die_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "Benutzer klickt auf My Operations",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_My_Operations()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Benutzer klickt auf Button Manage Custormes",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_Button_Manage_Custormes()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-14T20:55:37.741Z",
+        "start_timestamp": "2020-12-12T20:34:21.516Z",
         "before": [
           {
             "result": {
@@ -338,315 +14,20 @@
             }
           }
         ],
-        "line": 26,
-        "name": "\"Die Button view,Edit,Delete sollten anklickbar und auf der Kundenseite sichtbar sein",
-        "description": "",
-        "id": "gmi-bank;\"die-button-view-edit-delete-sollten-anklickbar-und-auf-der-kundenseite-sichtbar-sein",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "Benutzer sieht und klickt auf die View",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sieht_und_klickt_auf_die_View()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "Benutzer sieht und klickt auf die Edit",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sieht_und_klickt_auf_die_Edit()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "Benutzer sieht und klickt auf die Delete",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sieht_und_klickt_auf_die_Delete()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_12"
-          },
-          {
-            "name": "@US_12-TC_02"
-          }
-        ]
-      },
-      {
         "line": 4,
-        "name": "Gmi Bank Startseite",
+        "name": "Register new users for GMI Bank",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "Benutzer geht zu \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 17
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_geht_zu(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "Benutzer sendet einen gültigen Benutzernamen \"team18_employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"team18_employee\"",
-                  "offset": 45
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sendet_einen_gültigen_Benutzernamen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "Benutzer sendet ein gültiges Passwort \"Team18employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team18employee\"",
-                  "offset": 38
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sendet_ein_gültiges_Passwort(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "Benutzer klickt auf die login button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_die_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "Benutzer klickt auf My Operations",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_My_Operations()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Benutzer klickt auf Button Manage Custormes",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_Button_Manage_Custormes()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-14T20:55:37.763Z",
-        "before": [
+        "id": "register-workflow;register-new-users-for-gmi-bank",
+        "after": [
           {
             "result": {
               "status": "skipped"
             },
             "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
-        "line": 33,
-        "name": "Die Button View Bearbeiten geben, über die alle Kundeninformationen ausgefüllt werden können",
-        "description": "",
-        "id": "gmi-bank;die-button-view-bearbeiten-geben--über-die-alle-kundeninformationen-ausgefüllt-werden-können",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 34,
-            "name": "Benutzer sieht und klickt auf die View",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sieht_und_klickt_auf_die_View()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 35,
-            "name": "Benutzer sieht und klickt auf die Button Edit",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sieht_und_klickt_auf_die_Button_Edit()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_12"
-          },
-          {
-            "name": "@US_12-TC_03"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Gmi Bank Startseite",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "Benutzer geht zu \"https://gmibank.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://gmibank.com/\"",
-                  "offset": 17
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_geht_zu(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "Benutzer sendet einen gültigen Benutzernamen \"team18_employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"team18_employee\"",
-                  "offset": 45
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sendet_einen_gültigen_Benutzernamen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "Benutzer sendet ein gültiges Passwort \"Team18employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team18employee\"",
-                  "offset": 38
-                }
-              ],
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_sendet_ein_gültiges_Passwort(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "Benutzer klickt auf die login button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_die_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "Benutzer klickt auf My Operations",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_My_Operations()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Benutzer klickt auf Button Manage Custormes",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_klickt_auf_Button_Manage_Custormes()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-14T20:55:37.803Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 38,
-        "name": "The Edit portal can allow user to create or update the user info",
-        "description": "",
-        "id": "gmi-bank;the-edit-portal-can-allow-user-to-create-or-update-the-user-info",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -654,123 +35,111 @@
             "result": {
               "status": "undefined"
             },
-            "line": 39,
-            "name": "TC_04 Benutzer sieht und klickt auf die Edit",
+            "line": 5,
+            "name": "user is on the registration page",
             "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 40,
-            "name": "Benutzer muss First Name geben",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_First_Name_geben()"
-            },
+            "line": 6,
+            "name": "user enters ssn number as SSN",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 41,
-            "name": "Benutzer muss Last Name geben",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Last_Name_geben()"
+            "line": 7,
+            "name": "user enters firstname and lastname as firstname and lastname",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 8,
+            "name": "user provides address address",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "user provides mobilephone as mobilephone",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user provides a username username",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 42,
-            "name": "Benutzer muss Middle Initial geben",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Middle_Initial_geben()"
+            "line": 11,
+            "name": "user provides email id as email",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 12,
+            "name": "user enters the password as firstpassword",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "user confirms the new password secondpassword",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 43,
-            "name": "Benutzer muss Email geben",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Email_geben()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 44,
-            "name": "Benutzer muss MobilePhone Number geben",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_MobilePhone_Number_geben()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 45,
-            "name": "Benutzer muss Phone Number geben",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Phone_Number_geben()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "Benutzer soll Adress geben",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_soll_Adress_geben()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "Benutzer muss Create Date geben",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_12_StepDefinitions.benutzer_muss_Create_Date_geben()"
-            },
+            "line": 14,
+            "name": "user clicks on register button and sees the success message as message",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US_12"
-          },
-          {
-            "name": "@US_12-TC_04"
+            "name": "@createnewapplicant"
           }
         ]
       }
     ],
-    "name": "Gmi Bank",
+    "name": "Register Workflow",
     "description": "",
-    "id": "gmi-bank",
+    "id": "register-workflow",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_12.feature",
+    "uri": "file:src/test/resources/features/createnewapplicant.feature",
     "tags": [
       {
-        "name": "@US_12",
+        "name": "@createnewapplicant",
         "type": "Tag",
         "location": {
-          "line": 1,
+          "line": 2,
           "column": 1
         }
       }
