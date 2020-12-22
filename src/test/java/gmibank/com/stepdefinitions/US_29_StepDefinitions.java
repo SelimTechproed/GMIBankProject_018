@@ -126,9 +126,9 @@ public class US_29_StepDefinitions {
         }
         System.out.println(listStates);
 
-        List expect= asList("AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL",
-                "GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NJ",
-                "NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY");
+       List expect= asList("AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL",
+          "GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NJ",
+          "NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY");
 //        List expect = asList("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
 //          "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana",
 //          "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
@@ -136,9 +136,9 @@ public class US_29_StepDefinitions {
 //          "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
 //          "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
 //          "Washington", "West Virginia", "Wisconsin", "Wyoming");
-        Assert.assertNotSame(expect,(actualStateName.listIterator()));
+       Assert.assertNotSame(expect,(actualStateName.listIterator()));
 
-    }
+   }
 
     @Then("user should be exit GMIBank database")
     public void user_should_be_exit_GMIBank_database() {
@@ -147,3 +147,5 @@ public class US_29_StepDefinitions {
 
 
 }
+
+
