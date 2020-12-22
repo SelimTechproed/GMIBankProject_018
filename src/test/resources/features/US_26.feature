@@ -16,6 +16,6 @@ Feature: US_26 System should allow to update countries using api end point
 
     Examples:
       |name|id|
-      |TR|1|
-      |BEL|2|
-      |HOL|26677|
+      |UK|181|
+      |FR|033|
+      |USA|190190|

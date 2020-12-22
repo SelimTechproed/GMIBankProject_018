@@ -1,6 +1,7 @@
 /target/
 .idea
 /*.iml
-debug.log
+/*.log
 .gitignore
 runners
+/*.xml
