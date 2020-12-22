@@ -1,30 +1,32 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-12T20:34:21.516Z",
+        "start_timestamp": "2020-12-22T16:45:44.202Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 2000000,
+              "status": "passed"
             },
             "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+              "location": "gmibank.com.stepdefinitions.Hooks.setUp()"
             }
           }
         ],
         "line": 4,
-        "name": "Register new users for GMI Bank",
+        "name": "TC001 : Read all customers",
         "description": "",
-        "id": "register-workflow;register-new-users-for-gmi-bank",
+        "id": "\"system-should-allow-to-read-all-customers-info-using-api-end-point;tc001-:-read-all-customers",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 11536000000,
+              "status": "passed"
             },
             "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+              "location": "gmibank.com.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -33,113 +35,65 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 8282000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user is on the registration page",
-            "match": {},
+            "name": "user sets all response using api endpoint \"https://www.gmibank.com/api/tp-customers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-customers\"",
+                  "offset": 42
+                }
+              ],
+              "location": "gmibank.com.stepdefinitions.US_20_StepDefinitions.user_sets_all_response_using_api_endpoint(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1267000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "user enters ssn number as SSN",
-            "match": {},
+            "name": "user deserializers country data as json to java",
+            "match": {
+              "location": "gmibank.com.stepdefinitions.US_20_StepDefinitions.user_deserializers_country_data_as_json_to_java()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2890000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "user enters firstname and lastname as firstname and lastname",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "name": "user validates the data",
+            "match": {
+              "location": "gmibank.com.stepdefinitions.US_20_StepDefinitions.user_validates_the_data()"
             },
-            "line": 8,
-            "name": "user provides address address",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "user provides mobilephone as mobilephone",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "user provides a username username",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "user provides email id as email",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "user enters the password as firstpassword",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "user confirms the new password secondpassword",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "user clicks on register button and sees the success message as message",
-            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@createnewapplicant"
+            "name": "@US20"
           }
         ]
       }
     ],
-    "name": "Register Workflow",
+    "name": "\"System should allow to read all customers info using api end point",
     "description": "",
-    "id": "register-workflow",
+    "id": "\"system-should-allow-to-read-all-customers-info-using-api-end-point",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/createnewapplicant.feature",
+    "uri": "file:src/test/resources/features/US_20.feature",
     "tags": [
       {
-        "name": "@createnewapplicant",
+        "name": "@US20",
         "type": "Tag",
         "location": {
-          "line": 2,
+          "line": 1,
           "column": 1
         }
       }

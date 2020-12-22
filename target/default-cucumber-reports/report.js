@@ -1,108 +1,58 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/createnewapplicant.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_20.feature");
 formatter.feature({
-  "name": "Register Workflow",
+  "name": "\"System should allow to read all customers info using api end point",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@createnewapplicant"
+      "name": "@US20"
     }
   ]
 });
 formatter.scenario({
-  "name": "Register new users for GMI Bank",
+  "name": "TC001 : Read all customers",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@createnewapplicant"
+      "name": "@US20"
     }
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user is on the registration page",
+  "name": "user sets all response using api endpoint \"https://www.gmibank.com/api/tp-customers\"",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "gmibank.com.stepdefinitions.US_20_StepDefinitions.user_sets_all_response_using_api_endpoint(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user enters ssn number as SSN",
+  "name": "user deserializers country data as json to java",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "gmibank.com.stepdefinitions.US_20_StepDefinitions.user_deserializers_country_data_as_json_to_java()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user enters firstname and lastname as firstname and lastname",
+  "name": "user validates the data",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "gmibank.com.stepdefinitions.US_20_StepDefinitions.user_validates_the_data()"
+});
 formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user provides address address",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user provides mobilephone as mobilephone",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user provides a username username",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user provides email id as email",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user enters the password as firstpassword",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user confirms the new password secondpassword",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks on register button and sees the success message as message",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });
