@@ -1,21 +1,17 @@
-@US_26_Ahmet
+@US_26
 
 Feature: US_26 System should allow to update countries using api end point
 
-  Background:update all country
+  Scenario Outline: User can just update each country
     Given use api end point "https://www.gmibank.com/api/tp-countries"
-
-  @allCountry
-  Scenario: TC_01 get all countries information as De-serialization
-    And   get all countries information as De-serialization
-    Then  find out how many countries and verify that there are number country
-
-  @updateCountry
-  Scenario Outline: TC_02 update first,second and last countries 1 by 1
-    And   user updates a country using api end point "https://www.gmibank.com/api/tp-countries"  "<name>" and its extension "<id>"
+    And   users can update any country with endPoint "https://www.gmibank.com/api/tp-countries" "<newname>" and its id "<id>"
 
     Examples:
-      |name|id|
-      |UK|181|
-      |FR|033|
-      |USA|190190|
+       |     newname       | id  |
+       |     Urfali Pasa   | 1   |
+
+
+
+
+
+
