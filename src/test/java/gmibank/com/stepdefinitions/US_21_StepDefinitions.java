@@ -84,9 +84,6 @@ public class US_21_StepDefinitions {
         List<String> liststates=jsonPath.getList("states");
         System.out.println(liststates);
 
-
-
-
     }
 
 }
