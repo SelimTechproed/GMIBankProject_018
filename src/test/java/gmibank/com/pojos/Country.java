@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 //import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -69,8 +70,8 @@ public class Country {
     public void setStates(Object states) {
         this.states = states;
     }
-//    @Override
-//    public String toString() {
-//        return new ToStringBuilder(this).append("id", id).append("name", name).append("states", states).toString();
-//    }
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this).append("id", id).append("name", name).append("states", states).toString();
+   }
 }

@@ -1,12 +1,10 @@
 package gmibank.com.stepdefinitions;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import gmibank.com.pojos.Country;
 import gmibank.com.pojos.Customer;
 import gmibank.com.utilities.ConfigurationReader;
 import gmibank.com.utilities.ReadTxt;
-import gmibank.com.utilities.TestBase;
 import gmibank.com.utilities.WriteToTxt;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,13 +12,11 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import static io.restassured.RestAssured.*;
 
 public class ApiStepDef {
