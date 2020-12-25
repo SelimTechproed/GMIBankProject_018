@@ -1,4 +1,5 @@
 /target/
 .idea
 /*.iml
-/*target/test-classes/features/US_08.feature
+/*.log
+/*.xml
