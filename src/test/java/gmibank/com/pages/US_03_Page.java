@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class US_03_Page {
 
+    public static US_03_Page us_03_page;
+
     public US_03_Page (){
         PageFactory.initElements(Driver.getDriver(),this);
     }
