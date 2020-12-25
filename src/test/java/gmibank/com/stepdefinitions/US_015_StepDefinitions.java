@@ -36,7 +36,7 @@ public class US_015_StepDefinitions {
             System.out.println("Account Types :" + element.getText());
             boolean account = element.isDisplayed();
             Assert.assertTrue("Test Passed", account);
-            System.out.println(account);
+            System.out.println(true);
         }
 
     }
@@ -47,7 +47,7 @@ public class US_015_StepDefinitions {
             System.out.println("Balance :" + element.getText());
             boolean balance = element.isDisplayed();
             Assert.assertTrue("Test Passed", balance);
-            System.out.println(balance);
+            System.out.println(true);
         }
 
     }

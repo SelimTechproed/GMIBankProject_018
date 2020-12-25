@@ -22,14 +22,14 @@ public class Hooks {
         //System.out.println("Hooks class - tearDown Method ");
 
         //screenshot almak icin
-        final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+        //final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
         //screenshotu frameworke bir image olarak yerlestiriyoruz.
         //Her FAIL olan scenario dan sonra screenshot almaliyiz.
 
         //Scenario basarisiz olursa image ekleyelim
-        if(scenario.isFailed()){
-            scenario.embed(screenshot,"image/png");
-        }
+        //if(scenario.isFailed()){
+        //    scenario.embed(screenshot,"image/png");
+      //  }
 
         Driver.closeDriver();
     }

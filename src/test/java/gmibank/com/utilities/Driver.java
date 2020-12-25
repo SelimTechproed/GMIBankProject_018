@@ -62,7 +62,7 @@ public class Driver {
         }
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
         return driver;
     }
