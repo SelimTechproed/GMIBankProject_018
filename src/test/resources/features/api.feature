@@ -75,3 +75,15 @@ Feature: Gmi Bank All Customer Info
     Examples: multiple countries
       |endPoint                                |id    |
       |https://www.gmibank.com/api/tp-countries|/60110|
+
+
+   @readData
+    Scenario Outline: read all customer data info
+     Given user gets all customer column data using "<query>" and "<columnName>"
+     And user sets all customer info to coreepondent files
+     Then  user validates all db customer info
+
+     Examples: all
+     |query |columnName|
+     |Select * from tp_country|id|
+     |Select * from tp_country|name|
