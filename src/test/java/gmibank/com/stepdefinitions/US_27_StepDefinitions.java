@@ -14,7 +14,7 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 
 //import static gmibank.com.jsonModels.StateJson.CREATE_STATE;
-import static gmibank.com.jsonModels.StateJson.CREATE_STATE2;
+//import static gmibank.com.jsonModels.StateJson.CREATE_STATE2;
 import static io.restassured.RestAssured.*;
 
 
