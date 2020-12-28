@@ -23,25 +23,12 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="f8014485-4f3c-4bd4-88e7-e247f096c344">
-        <schema name="pg_catalog" object-types="table, view, function" />
-        <schema name="public" object-types="table, view, function" />
-      </connection>
-    </loaded-nodes>
-  </component>
-  <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="f8014485-4f3c-4bd4-88e7-e247f096c344">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[Select * from tp_customer;
-
-select * from tp_country;]]></console>
-    </connection>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f8014485-4f3c-4bd4-88e7-e247f096c344">
       <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
-    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
