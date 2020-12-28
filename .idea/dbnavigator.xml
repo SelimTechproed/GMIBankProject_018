@@ -37,6 +37,12 @@
 select * from tp_country;]]></console>
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseConsoleManager">
+    <connection id="f8014485-4f3c-4bd4-88e7-e247f096c344">
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
+    </connection>
+    <loaded-nodes />
+  </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
