@@ -32,16 +32,16 @@ public class PDFGenerator {
 
             PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(pdf_path));
 
-            document.open();
+            document.open(); // once dosyanin acilmasi lazim
 
-            document.add(new Paragraph(pdf_title));
+            document.add(new Paragraph(pdf_title));  // sonra basligin yerlestirilmesi
 
-            PdfPTable table = new PdfPTable(5);
+            PdfPTable table = new PdfPTable(headers.size());
 
-            table.setWidthPercentage(110);
+            table.setWidthPercentage(110);  // baslik ile pdf arasindaki mesafe
             table.setSpacingBefore(12);
             table.setSpacingAfter(12);
-            float [] colWidth = {2,2,2,2,2};
+            float [] colWidth = {2,2,2,2,2};  // sutun genisligi
             table.setWidths(colWidth);
 
             for (int i=0; i<headers.size();i++){
@@ -52,7 +52,7 @@ public class PDFGenerator {
 
 
 
-            document.add(table);
+            document.add(table); // en son asamada table documentin icine atilacak
 
             document.close();
 
@@ -73,7 +73,7 @@ public class PDFGenerator {
         Document document = new Document();
         String pdf_path =  fileName;
         String pdf_title = header;
-      //  String logo_path = "/Users/ibrahimkalin/Downloads/Techproed.jpg";
+   //     String logo_path = "/Users/mk201/OneDrive/Desktop/logo.jpg";
         List<String> headers = new ArrayList<String>();
         headers.add("Applicants");
         headers.add("SSNs");
@@ -88,7 +88,7 @@ public class PDFGenerator {
         rowData.add("USA");
         rowData.add("North Carolina");
         rowData.add("22180");
-        rowData.add("final");
+     //   rowData.add("final");
 
 
 
@@ -165,7 +165,7 @@ public class PDFGenerator {
         Document document = new Document();
         String pdf_path = fileName;
         String pdf_title = header;
-    //    String logo_path = "/Users/ibrahimkalin/Downloads/Techproed.jpg";
+      //  String logo_path = "/Users/mk201/OneDrive/Desktop/logo.jpg";
         List<String> headers = new ArrayList<String>();
         headers.add("Applicants");
         headers.add("SSNs");
@@ -181,7 +181,7 @@ public class PDFGenerator {
 
             document.open();
 
-            document.add(new Paragraph("                                     "+pdf_title));
+            document.add(new Paragraph("                                            "+pdf_title));
 
             PdfPTable table = new PdfPTable(5);
             table.setWidthPercentage(110);
@@ -212,7 +212,7 @@ public class PDFGenerator {
             }
             document.add(table);
 
-        //    document.add(Image.getInstance(logo_path));
+     //       document.add(Image.getInstance(logo_path));
             document.close();
 
             writer.close();
@@ -228,6 +228,12 @@ public class PDFGenerator {
 
     public static void main(String[] args) {
 
+       //pdfGenerator("               pdf_ders","deneme.pdf");
+    //  pdfGeneratorRowsAndCells("pdf2","pdf_ders2.pdf");
+
+
+
+
         List <Customer> list = new ArrayList<>();
         Country country = new Country();
         country.setName("USA");
@@ -240,10 +246,14 @@ public class PDFGenerator {
 
         list.add(customer);
 
-        String header = "All Applicants Information";
-        String fileName ="applicants.pdf";
+        String header = "Information";
+        String fileName ="some.pdf";
 
         pdfGeneratorRowsAndCellsWithList(header,list,fileName);
+
+
+
+
     }
 
     public static void pdfGeneratorRowsAndCellsWithListFirstToFive(String header, List <Customer> list, String fileName){
@@ -255,7 +265,7 @@ public class PDFGenerator {
         List<String> headers = new ArrayList<String>();
         headers.add("Firstname");
         headers.add("LastName");
-        headers.add("Mobile Number");
+        headers.add("Email");
         headers.add("City");
         headers.add("SSN Number");
 
@@ -291,7 +301,7 @@ public class PDFGenerator {
 
                 table.addCell(list.get(i).getFirstName());
                 table.addCell(list.get(i).getLastName());
-                table.addCell(list.get(i).getMobilePhoneNumber());
+                table.addCell(list.get(i).getEmail());
                 table.addCell(list.get(i).getCity());
                 table.addCell(list.get(i).getSsn());
 

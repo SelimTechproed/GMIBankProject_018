@@ -71,6 +71,11 @@ public class DatabaseUtility {
      *         results in multiple rows and/or columns of data, only first row will
      *         be returned. The rest of the data will be ignored
      */
+    public static Object getCellValue(String query , int column , int row) {
+        return getQueryResultList(query).get(row).get(column);
+    }
+
+
     public static List<Object> getRowList(String query) {
         return getQueryResultList(query).get(0);
     }

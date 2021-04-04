@@ -145,7 +145,7 @@ public class WriteToTxt {
     }
 
     //hatice method ekleme
-  public static void saveDataInFileWithid(String fileName, Country[] countries) {
+  public static void saveDataInFileWithCountrId(String fileName, Country[] countries) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
             for (int i = 0; i < countries.length; i++)

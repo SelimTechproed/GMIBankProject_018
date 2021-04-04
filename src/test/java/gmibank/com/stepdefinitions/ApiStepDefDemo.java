@@ -44,7 +44,6 @@ public class ApiStepDefDemo {
                 .get(country_api_endpoint)
                 .then()
                 .contentType(ContentType.JSON)
-                .statusCode(200)
                 .extract()
                 .response();
 
@@ -67,7 +66,7 @@ public class ApiStepDefDemo {
         }
 
 
-        WriteToTxt.saveDataInFileWithid("allCountriesId.txt", country);
+        WriteToTxt.saveDataInFileWithCountrId("allCountriesId.txt", country);
         List<String> readId = ReadTxt.returnCustomerSNNList("allCountriesId.txt");
 
         Assert.assertEquals("not match",listId,readId);

@@ -60,7 +60,7 @@ public class US_21_StepDefinitions {
             id.add(countries[i].getId());
             System.out.println(id);
         }
-        WriteToTxt.saveDataInFileWithid("allCountriesid.txt",countries);
+        WriteToTxt.saveDataInFileWithCountrId("allCountriesid.txt",countries);
 
 
 

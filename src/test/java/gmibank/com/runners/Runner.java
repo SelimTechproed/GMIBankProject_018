@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
-        glue = "gmibank/com/stepdefinitions",
-        tags = "@KullanicibilgileriApi",
+        glue = "gmibank/stepdefinitions",
+        tags = "@Api_Testing_ders",
         dryRun = true
 
 )

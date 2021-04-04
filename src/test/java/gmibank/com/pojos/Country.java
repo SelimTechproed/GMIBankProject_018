@@ -74,4 +74,7 @@ public class Country {
     public String toString() {
         return new ToStringBuilder(this).append("id", id).append("name", name).append("states", states).toString();
    }
+
+    public void setId(String line) {
+    }
 }
