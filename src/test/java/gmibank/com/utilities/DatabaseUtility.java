@@ -15,10 +15,10 @@ import java.util.List;
 import java.util.Map;
 
 public class DatabaseUtility {
+
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
-
 
     public static void createConnection() {
         String url = "jdbc:postgresql://157.230.48.97:5432/gmibank_db";

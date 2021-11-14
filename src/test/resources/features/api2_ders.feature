@@ -26,4 +26,4 @@ Feature: Country Api Testing ders
     Given ders deletes updated country using endpoint "<endPoint>" and its extension "<id>" and validate
     Examples: Delete Country ders
       |endPoint                                |id    |
-      |https://www.gmibank.com/api/tp-countries|/74443|
+      |https://www.gmibank.com/api/tp-countries|/91013|

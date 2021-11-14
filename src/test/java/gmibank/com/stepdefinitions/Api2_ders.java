@@ -67,7 +67,7 @@ public class Api2_ders {
 
         // tum ulke idlerini txt olarak yazdiralim
 
-        WriteToTxt.saveDataInFileWithCountrId("allCountryId1",country);
+      //  WriteToTxt.saveDataInFileWithCountrId("allCountryId1",country);
 
         // txt olarak yazdirdigimiz idleri readtxt uzerinden okutalim
 
@@ -101,9 +101,9 @@ public class Api2_ders {
 
         response.prettyPrint();
 
-        JsonPath jsonPath = response.jsonPath();
-        createdCountryId = jsonPath.getInt("id");
-        System.out.println(createdCountryId);
+   //     JsonPath jsonPath = response.jsonPath();
+    //    createdCountryId = jsonPath.getInt("id");
+    //    System.out.println(createdCountryId);
 
 
     }

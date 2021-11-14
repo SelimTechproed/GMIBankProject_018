@@ -1,8 +1,6 @@
 package gmibank.com.utilities;
 
-import gmibank.com.pojos.Country;
-import gmibank.com.pojos.Customer;
-import gmibank.com.pojos.States;
+import gmibank.com.pojos.*;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -171,6 +169,38 @@ public class WriteToTxt {
         }
 
 
+    }
+
+    public static void saveDataInFileWithCountryName(String fileName, Country5[] countries) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+            for (int i = 0; i < countries.length; i++)
+                if(countries[i]!=null) {
+                    writer.append(countries[i].getName() + "\n");
+                }
+            writer.close();
+        } catch (Exception e) {
+        }
+    }
+
+    public static void saveDataInFileWithCountry5Id(String fileName, Country5[] countries) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+            for (int i = 0; i < countries.length; i++)
+                writer.append(countries[i].getId() + "\n");
+            writer.close();
+        } catch (Exception e) {
+        }
+    }
+
+    public static void saveDataInFileWithCountry6Id(String fileName, Country6[] countries) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+            for (int i = 0; i < countries.length; i++)
+                writer.append(countries[i].getId() + "\n");
+            writer.close();
+        } catch (Exception e) {
+        }
     }
 
 
