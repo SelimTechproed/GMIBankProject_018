@@ -25,8 +25,8 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="f8014485-4f3c-4bd4-88e7-e247f096c344">
-        <schema name="pg_catalog" object-types="table, view, function" />
-        <schema name="public" object-types="table, view, function" />
+        <schema name="pg_catalog" object-types="function, table, view" />
+        <schema name="public" object-types="function, table, column, view" />
       </connection>
     </loaded-nodes>
   </component>
@@ -34,7 +34,15 @@
     <connection id="f8014485-4f3c-4bd4-88e7-e247f096c344">
       <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from pg_catalog.pg_tables
 
-select * from tp_customer]]></console>
+select  * from tp_customer
+
+select * from tp_customer where email like 'L%'
+
+select * from tp_account
+
+select * from tp_account where balance > 10000
+
+update tp_account set description = 'hasan' where id = 2343]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

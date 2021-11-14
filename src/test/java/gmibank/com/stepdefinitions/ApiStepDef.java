@@ -49,7 +49,7 @@ public class ApiStepDef {
                 .statusCode(200)
                 .extract()
                 .response();
-     //   response.prettyPrint();  //response'u yazdirir
+       response.prettyPrint();  //response'u yazdirir
 
         /*  alternatif kullanim
 

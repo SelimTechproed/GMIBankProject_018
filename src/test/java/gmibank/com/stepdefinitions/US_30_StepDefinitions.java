@@ -39,7 +39,7 @@ public class US_30_StepDefinitions {
             listOfCustomers.add(customer);
         }
 
-        PDFGenerator.pdfGeneratorRowsAndCellsWithListFirstToFive("First Five Customers  Data",listOfCustomers,"FirstFiveCustomer.pdf" );
+        PDFGenerator.pdfGeneratorRowsAndCellsWithListFirst5("First Five Customers  Data",listOfCustomers,"FirstFiveCustomer.pdf" );
 
 
     }

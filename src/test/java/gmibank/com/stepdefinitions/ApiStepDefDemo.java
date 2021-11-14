@@ -234,7 +234,7 @@ public class ApiStepDefDemo {
             listOfCustomers.add(customer);
         }
 
-        PDFGenerator.pdfGeneratorRowsAndCellsWithListFirstToFive("                    *** Team 18 Presentation *** \n                                                      === First Five Customers Data ===",listOfCustomers,"FirstFiveCustomer.pdf" );
+        PDFGenerator.pdfGeneratorRowsAndCellsWithListFirst5("                    *** Team 18 Presentation *** \n                                                      === First Five Customers Data ===",listOfCustomers,"FirstFiveCustomer.pdf" );
 
 
     }
